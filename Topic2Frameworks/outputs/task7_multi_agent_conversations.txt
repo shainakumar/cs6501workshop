@@ -1,0 +1,193 @@
+Script started on 2026-01-22 16:55:53+00:00 [TERM="xterm-color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
+2026-01-22 16:56:00.103498: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1769100960.124558   15028 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1769100960.130792   15028 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1769100960.146110   15028 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1769100960.146136   15028 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1769100960.146140   15028 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1769100960.146144   15028 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-01-22 16:56:00.150751: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+======================================================================
+LangGraph Multi-Agent Chat: Human + Llama + Qwen
+======================================================================
+
+Loading Llama model...
+Using CUDA (NVIDIA GPU) for inference
+Loading Llama model: meta-llama/Llama-3.2-1B-Instruct
+This may take a moment on first run as the model is downloaded...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Device set to use cuda
+Llama model loaded successfully!
+
+Loading Qwen model...
+Using CUDA (NVIDIA GPU) for inference
+Loading Qwen model: Qwen/Qwen2.5-0.5B-Instruct
+This may take a moment on first run as the model is downloaded...
+Device set to use cuda
+Qwen model loaded successfully!
+
+Creating LangGraph with multi-agent support...
+Graph created successfully!
+
+Saving graph visualization...
+Graph image saved to lg_graph.png
+
+======================================================================
+Multi-agent chat session started!
+You can switch between Llama and Qwen at any time.
+Both models can see the full conversation history.
+======================================================================
+
+======================================================================
+Enter your text (or 'quit' to exit, 'verbose'/'quiet' to toggle tracing):
+Tip: Start with 'Hey Qwen' or 'Hey Llama' to address a specific model
+======================================================================
+
+> What is the best ice cream flavor?
+
+→ Addressing: LLAMA
+
+Processing with Llama...
+
+======================================================================
+RESPONSE:
+======================================================================
+Llama: Pineapple-coconut ice cream is the most refreshing.
+
+======================================================================
+Enter your text (or 'quit' to exit, 'verbose'/'quiet' to toggle tracing):
+Tip: Start with 'Hey Qwen' or 'Hey Llama' to address a specific model
+======================================================================
+
+> Hey qwen, what do you think?
+
+→ Addressing: QWEN
+
+Processing with Qwen...
+
+======================================================================
+RESPONSE:
+======================================================================
+Qwen: I like pineapple-coconut flavors too! It's refreshing and a bit sweet. Maybe try a couple of them sometime? Let me know how you like it! Qwen:
+
+======================================================================
+Enter your text (or 'quit' to exit, 'verbose'/'quiet' to toggle tracing):
+Tip: Start with 'Hey Qwen' or 'Hey Llama' to address a specific model
+======================================================================
+
+> verbose
+Verbose mode enabled - tracing information will be displayed
+
+[TRACE] Routing decision after get_user_input
+[TRACE] Reprompt flag set, routing to: get_user_input
+
+[TRACE] Entering node: get_user_input
+[TRACE] Message history length: 4 messages
+
+======================================================================
+Enter your text (or 'quit' to exit, 'verbose'/'quiet' to toggle tracing):
+Tip: Start with 'Hey Qwen' or 'Hey Llama' to address a specific model
+======================================================================
+
+> I agree
+[TRACE] Valid user input received: 'I agree'
+[TRACE] Active model: qwen
+[TRACE] Adding HumanMessage with 'Human:' prefix
+
+[TRACE] Routing decision after get_user_input
+[TRACE] Routing to: call_qwen
+
+[TRACE] Entering node: call_qwen
+[TRACE] Processing 5 messages for Qwen
+
+[TRACE] ----- PROMPT SENT TO QWEN -----
+System: You are Qwen. Participants are Human, Llama, and Qwen. The conversation so far is shown below with prefixes 'Human:', 'Llama:', 'Qwen:'. You MUST reply with exactly ONE line. That line MUST start with 'Qwen: ' followed by your answer. Do NOT write any other speaker lines (no 'Human:' or 'Llama:'). Do NOT continue the conversation beyond your one line.
+User: Human: What is the best ice cream flavor?
+User: Llama: Pineapple-coconut ice cream is the most refreshing.
+User: Human: what do you think?
+Assistant: Qwen: I like pineapple-coconut flavors too! It's refreshing and a bit sweet. Maybe try a couple of them sometime? Let me know how you like it! Qwen:
+User: Human: I agree
+Assistant: Qwen:
+[TRACE] ----- END PROMPT -----
+
+
+Processing with Qwen...
+[TRACE] Qwen response: 'Absolutely! Enjoy your delicious taste experience! Qwen: Have a great day!...'
+[TRACE] Adding HumanMessage with 'Qwen:' prefix
+
+[TRACE] Entering node: print_response
+[TRACE] Total messages in history: 6
+
+======================================================================
+RESPONSE:
+======================================================================
+Qwen: Absolutely! Enjoy your delicious taste experience! Qwen: Have a great day!
+
+[TRACE] Response printed to stdout
+[TRACE] Looping back to get_user_input
+
+[TRACE] Entering node: get_user_input
+[TRACE] Message history length: 6 messages
+
+======================================================================
+Enter your text (or 'quit' to exit, 'verbose'/'quiet' to toggle tracing):
+Tip: Start with 'Hey Qwen' or 'Hey Llama' to address a specific model
+======================================================================
+
+> Hey llama do you agree
+[TRACE] Valid user input received: 'Hey llama do you agree'
+[TRACE] Active model: llama
+[TRACE] Adding HumanMessage with 'Human:' prefix
+
+[TRACE] Routing decision after get_user_input
+[TRACE] Routing to: call_llama
+
+[TRACE] Entering node: call_llama
+[TRACE] Processing 7 messages for Llama
+
+[TRACE] ----- PROMPT SENT TO LLAMA -----
+System: You are Llama. Participants are Human, Llama, and Qwen. The conversation so far is shown below with prefixes 'Human:', 'Llama:', 'Qwen:'. You MUST reply with exactly ONE line. That line MUST start with 'Llama: ' followed by your answer. Do NOT write any other speaker lines (no 'Human:' or 'Qwen:'). Do NOT continue the conversation beyond your one line.
+User: Human: What is the best ice cream flavor?
+Assistant: Llama: Pineapple-coconut ice cream is the most refreshing.
+User: Human: what do you think?
+User: Qwen: I like pineapple-coconut flavors too! It's refreshing and a bit sweet. Maybe try a couple of them sometime? Let me know how you like it! Qwen:
+User: Human: I agree
+User: Qwen: Absolutely! Enjoy your delicious taste experience! Qwen: Have a great day!
+User: Human: do you agree
+Assistant: Llama:
+[TRACE] ----- END PROMPT -----
+
+
+Processing with Llama...
+[TRACE] Llama response: 'I agree with Qwen, there's something special about pineapple-coconut ice cream....'
+[TRACE] Adding HumanMessage with 'Llama:' prefix
+
+[TRACE] Entering node: print_response
+[TRACE] Total messages in history: 8
+
+======================================================================
+RESPONSE:
+======================================================================
+Llama: I agree with Qwen, there's something special about pineapple-coconut ice cream.
+
+[TRACE] Response printed to stdout
+[TRACE] Looping back to get_user_input
+
+[TRACE] Entering node: get_user_input
+[TRACE] Message history length: 8 messages
+
+======================================================================
+Enter your text (or 'quit' to exit, 'verbose'/'quiet' to toggle tracing):
+Tip: Start with 'Hey Qwen' or 'Hey Llama' to address a specific model
+======================================================================
+
+> quit
+[TRACE] User requested exit
+Goodbye!
+
+[TRACE] Routing decision after get_user_input
+[TRACE] Routing to: END
+
+Script done on 2026-01-22 16:58:08+00:00 [COMMAND_EXIT_CODE="0"]
