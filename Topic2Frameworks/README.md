@@ -40,6 +40,9 @@ Adds runtime tracing control. If the user inputs `verbose`, each node prints tra
 **`task3_no_empty_input_branch.py`**  
 Prevents empty input from being passed to the LLM using LangGraph control flow. Implements a three-way conditional branch from the input node, with empty input looping back to itself. Demonstrates why small LLMs behave inconsistently on empty prompts.
 
+Before modifying the code to handle empty inputs, the LLM's behavior was observed. When the first empty input was given, the program still passed it to the LLM; the model invented a user situation and request for help, generating a structured list of tasks/priorities. When a second empty input was given, the model produced a completely different continuation (creative story-writing). The inconsistencies in behavior and output across attempts demonstrates how smaller/less sophisticated instruction models tend to hallucinate a plausible next message rather than ask for clarification or refuse when given no explicit prompt/intent. They are unable to meaningfully interpret empty inputs. 
+
+
 ---
 
 ## Task 4 – Parallel Llama and Qwen
