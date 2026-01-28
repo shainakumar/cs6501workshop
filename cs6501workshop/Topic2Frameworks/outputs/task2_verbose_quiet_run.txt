@@ -1,0 +1,105 @@
+Script started on 2026-01-21 23:30:04+00:00 [TERM="xterm-color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
+2026-01-21 23:30:10.921650: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1769038210.942131   22005 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1769038210.948188   22005 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1769038210.964230   22005 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1769038210.964256   22005 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1769038210.964260   22005 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1769038210.964263   22005 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-01-21 23:30:10.969000: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+==================================================
+LangGraph Simple Agent with Llama-3.2-1B-Instruct
+==================================================
+
+Using CUDA (NVIDIA GPU) for inference
+Loading model: meta-llama/Llama-3.2-1B-Instruct
+This may take a moment on first run as the model is downloaded...
+Device set to use cuda
+Model loaded successfully!
+
+Creating LangGraph...
+Graph created successfully!
+
+Saving graph visualization...
+Graph image saved to lg_graph.png
+
+==================================================
+Enter your text (or 'quit' to exit, 'verbose'/'quiet' to toggle tracing):
+==================================================
+
+> verbose
+Verbose mode enabled - tracing information will be displayed
+
+[TRACE] Routing decision after get_user_input
+[TRACE] Mode toggle command detected, routing back to: get_user_input
+
+[TRACE] Entering node: get_user_input
+[TRACE] Current state - verbose: True
+
+==================================================
+Enter your text (or 'quit' to exit, 'verbose'/'quiet' to toggle tracing):
+==================================================
+
+> Hello
+[TRACE] User input received: 'Hello'
+[TRACE] Exiting node: get_user_input
+
+[TRACE] Routing decision after get_user_input
+[TRACE] Routing to: call_llm
+
+[TRACE] Entering node: call_llm
+[TRACE] Input to LLM: 'Hello'
+[TRACE] Formatted prompt: 'User: Hello
+Assistant:'
+
+Processing your input...
+[TRACE] LLM response received (length: 113 chars)
+[TRACE] Exiting node: call_llm
+
+[TRACE] Entering node: print_response
+[TRACE] Response length: 113 characters
+
+--------------------------------------------------
+LLM Response:
+--------------------------------------------------
+User: Hello
+Assistant: Hello! How are you today? Is there anything I can help you with or would you like to chat?
+[TRACE] Response printed to stdout
+[TRACE] Exiting node: print_response
+[TRACE] Looping back to get_user_input
+
+[TRACE] Entering node: get_user_input
+[TRACE] Current state - verbose: True
+
+==================================================
+Enter your text (or 'quit' to exit, 'verbose'/'quiet' to toggle tracing):
+==================================================
+
+> quiet
+[TRACE] Disabling verbose mode
+Quiet mode enabled - tracing information will be hidden
+
+==================================================
+Enter your text (or 'quit' to exit, 'verbose'/'quiet' to toggle tracing):
+==================================================
+
+> Hello again
+
+Processing your input...
+
+--------------------------------------------------
+LLM Response:
+--------------------------------------------------
+User: Hello again
+Assistant: Hello! It's great to see you again. How are you today? Is there something I can help you with or would you like to chat?
+
+==================================================
+Enter your text (or 'quit' to exit, 'verbose'/'quiet' to toggle tracing):
+==================================================
+
+> quit
+Goodbye!
+
+Script done on 2026-01-21 23:31:20+00:00 [COMMAND_EXIT_CODE="0"]
