@@ -1,0 +1,18 @@
+{
+  "model": "meta-llama/Llama-3.2-1B-Instruct",
+  "quantization_bits": null,
+  "timestamp": "20260128_023335",
+  "device": "cuda",
+  "duration_seconds": 106.029301,
+  "overall_accuracy": 26.973684210526315,
+  "total_correct": 41,
+  "total_questions": 152,
+  "subject_results": [
+    {
+      "subject": "astronomy",
+      "correct": 41,
+      "total": 152,
+      "accuracy": 26.973684210526315
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+Script started on 2026-01-28 01:31:30+00:00 [TERM="xterm-color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
+
+======================================================================
+Llama 3.2-1B MMLU Evaluation (Quantized)
+======================================================================
+
+======================================================================
+Environment Check
+======================================================================
+✓ Running in Google Colab
+✓ Platform: Linux (x86_64)
+✓ GPU Available: Tesla T4
+✓ GPU Memory: 15.83 GB
+✓ Quantization disabled - loading full precision model
+✓ Hugging Face authenticated
+
+======================================================================
+Configuration
+======================================================================
+Model: meta-llama/Llama-3.2-1B-Instruct
+Device: cuda
+Quantization: None (full precision)
+Expected memory: ~2.5 GB (FP16)
+Number of subjects: 1
+======================================================================
+
+
+Loading model meta-llama/Llama-3.2-1B-Instruct...
+Device: cuda
+✓ Tokenizer loaded
+Loading model (this may take 2-3 minutes)...
+2026-01-28 01:31:37.828245: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1769563897.848542    8581 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1769563897.853495    8581 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1769563897.866435    8581 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1769563897.866455    8581 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1769563897.866459    8581 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1769563897.866465    8581 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-01-28 01:31:37.870402: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+✓ Model loaded successfully!
+  Model device: cuda:0
+  Model dtype: torch.float16
+  GPU Memory: 2.47 GB allocated, 2.51 GB reserved
+
+======================================================================
+Starting evaluation on 1 subjects
+======================================================================
+
+
+Progress: 1/1 subjects
+
+======================================================================
+Evaluating subject: astronomy
+======================================================================
+Testing astronomy:   0% 0/152 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Testing astronomy:   1% 1/152 [00:00<01:06,  2.27it/s]Testing astronomy:   3% 4/152 [00:00<00:16,  8.91it/s]Testing astronomy:   5% 8/152 [00:00<00:08, 16.30it/s]Testing astronomy:   7% 11/152 [00:00<00:07, 19.30it/s]Testing astronomy:   9% 14/152 [00:00<00:07, 18.65it/s]Testing astronomy:  12% 18/152 [00:01<00:05, 22.56it/s]Testing astronomy:  14% 22/152 [00:01<00:04, 26.14it/s]Testing astronomy:  17% 26/152 [00:01<00:04, 28.65it/s]Testing astronomy:  20% 30/152 [00:01<00:03, 30.92it/s]Testing astronomy:  22% 34/152 [00:01<00:03, 32.35it/s]Testing astronomy:  25% 38/152 [00:01<00:03, 33.37it/s]Testing astronomy:  28% 42/152 [00:01<00:03, 33.06it/s]Testing astronomy:  30% 46/152 [00:01<00:03, 33.19it/s]Testing astronomy:  33% 50/152 [00:01<00:03, 33.95it/s]Testing astronomy:  36% 54/152 [00:02<00:02, 34.85it/s]Testing astronomy:  38% 58/152 [00:02<00:02, 35.46it/s]Testing astronomy:  41% 62/152 [00:02<00:02, 35.79it/s]Testing astronomy:  43% 66/152 [00:02<00:02, 36.19it/s]Testing astronomy:  46% 70/152 [00:02<00:02, 36.26it/s]Testing astronomy:  49% 74/152 [00:02<00:02, 35.42it/s]Testing astronomy:  51% 78/152 [00:02<00:02, 33.99it/s]Testing astronomy:  54% 82/152 [00:02<00:02, 34.24it/s]Testing astronomy:  57% 86/152 [00:02<00:01, 34.38it/s]Testing astronomy:  59% 90/152 [00:03<00:01, 34.97it/s]Testing astronomy:  62% 94/152 [00:03<00:01, 35.31it/s]Testing astronomy:  64% 98/152 [00:03<00:01, 35.62it/s]Testing astronomy:  67% 102/152 [00:03<00:01, 35.86it/s]Testing astronomy:  70% 106/152 [00:03<00:01, 36.09it/s]Testing astronomy:  72% 110/152 [00:03<00:01, 36.21it/s]Testing astronomy:  75% 114/152 [00:03<00:01, 35.99it/s]Testing astronomy:  78% 118/152 [00:03<00:00, 34.12it/s]Testing astronomy:  80% 122/152 [00:04<00:00, 34.47it/s]Testing astronomy:  83% 126/152 [00:04<00:00, 35.44it/s]Testing astronomy:  86% 130/152 [00:04<00:00, 35.99it/s]Testing astronomy:  88% 134/152 [00:04<00:00, 36.21it/s]Testing astronomy:  91% 138/152 [00:04<00:00, 36.52it/s]Testing astronomy:  93% 142/152 [00:04<00:00, 36.71it/s]Testing astronomy:  96% 146/152 [00:04<00:00, 36.31it/s]Testing astronomy:  99% 150/152 [00:04<00:00, 36.49it/s]Testing astronomy: 100% 152/152 [00:04<00:00, 31.38it/s]
+✓ Result: 75/152 correct = 49.34%
+
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: meta-llama/Llama-3.2-1B-Instruct
+None (full precision)
+Total Subjects: 1
+Total Questions: 152
+Total Correct: 75
+Overall Accuracy: 49.34%
+Duration: 0.1 minutes
+======================================================================
+
+✓ Results saved to: llama_3.2_1b_mmlu_results_full_20260128_013151.json
+
+📊 Top 5 Subjects:
+  1. astronomy: 49.34%
+
+📉 Bottom 5 Subjects:
+  1. astronomy: 49.34%
+
+======================================================================
+💾 To download results in Colab:
+======================================================================
+from google.colab import files
+files.download('llama_3.2_1b_mmlu_results_full_20260128_013151.json')
+
+✅ Evaluation complete!
+
+real	0m23.165s
+user	0m18.346s
+sys	0m2.212s
+
+Script done on 2026-01-28 01:31:53+00:00 [COMMAND_EXIT_CODE="0"]

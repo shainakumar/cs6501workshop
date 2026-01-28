@@ -1,0 +1,18 @@
+{
+  "model": "meta-llama/Llama-3.2-1B-Instruct",
+  "quantization_bits": null,
+  "timestamp": "20260128_013212",
+  "device": "cuda",
+  "duration_seconds": 4.962202,
+  "overall_accuracy": 24.0,
+  "total_correct": 24,
+  "total_questions": 100,
+  "subject_results": [
+    {
+      "subject": "abstract_algebra",
+      "correct": 24,
+      "total": 100,
+      "accuracy": 24.0
+    }
+  ]
+}
