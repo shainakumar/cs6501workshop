@@ -1,0 +1,194 @@
+Script started on 2026-01-29 19:45:56+00:00 [TERM="xterm-color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
+============================================================
+TEST 1: Query requiring tool
+============================================================
+User: What's the weather like in San Francisco?
+
+--- Iteration 1 ---
+LLM wants to call 1 tool(s)
+  Tool: get_weather
+  Args: {'location': 'San Francisco'}
+  Result: Sunny, 72°F
+
+--- Iteration 2 ---
+Assistant: The weather in San Francisco is sunny with a temperature of 72°F.
+
+
+============================================================
+TEST 2: Query not requiring tool
+============================================================
+User: Say hello!
+
+--- Iteration 1 ---
+Assistant: Hello! How can I assist you today?
+
+
+============================================================
+TEST 3: Multiple tool calls
+============================================================
+User: What's the weather in New York and London?
+
+--- Iteration 1 ---
+LLM wants to call 2 tool(s)
+  Tool: get_weather
+  Args: {'location': 'New York'}
+  Result: Cloudy, 55°F
+  Tool: get_weather
+  Args: {'location': 'London'}
+  Result: Rainy, 48°F
+
+--- Iteration 2 ---
+Assistant: The weather in New York is cloudy at 55°F, while in London, it is rainy at 48°F.
+
+
+============================================================
+TEST: Two tool calls in one turn (count i and s)
+============================================================
+User: Are there more i's than s's in 'Mississippi riverboats'? Use tools.
+
+--- Iteration 1 ---
+LLM wants to call 2 tool(s)
+  Tool: count_letter
+  Args: {'text': 'Mississippi riverboats', 'letter': 'i'}
+  Result: {"ok": true, "text": "Mississippi riverboats", "letter": "i", "count": 5}
+  Tool: count_letter
+  Args: {'text': 'Mississippi riverboats', 'letter': 's'}
+  Result: {"ok": true, "text": "Mississippi riverboats", "letter": "s", "count": 5}
+
+--- Iteration 2 ---
+Assistant: In the phrase "Mississippi riverboats," there are 5 occurrences of the letter 'i' and 5 occurrences of the letter 's'. So, there are not more i's than s's; they are equal.
+
+
+============================================================
+TEST: Chaining (counts -> sin(diff))
+============================================================
+User: What is the sin of (#i - #s) in 'Mississippi riverboats'? Use tools.
+
+--- Iteration 1 ---
+LLM wants to call 2 tool(s)
+  Tool: count_letter
+  Args: {'text': 'Mississippi riverboats', 'letter': 'i'}
+  Result: {"ok": true, "text": "Mississippi riverboats", "letter": "i", "count": 5}
+  Tool: count_letter
+  Args: {'text': 'Mississippi riverboats', 'letter': 's'}
+  Result: {"ok": true, "text": "Mississippi riverboats", "letter": "s", "count": 5}
+
+--- Iteration 2 ---
+LLM wants to call 1 tool(s)
+  Tool: geo_calculator
+  Args: {'op': 'hypotenuse', 'a': 5, 'b': 5}
+  Result: {"ok": true, "op": "hypotenuse", "value": 7.0710678118654755}
+
+--- Iteration 3 ---
+LLM wants to call 1 tool(s)
+  Tool: geo_calculator
+  Args: {'expr': 'sin(7.0710678118654755)'}
+  Result: {"ok": true, "mode": "expr", "expr": "sin(7.0710678118654755)", "value": 0.7088612918380416}
+
+--- Iteration 4 ---
+Assistant: The sine of (#i - #s) in the phrase 'Mississippi riverboats' is approximately 0.7089.
+
+
+============================================================
+TEST: Use ALL tools
+============================================================
+User: In 'Mississippi riverboats', count i's and s's, compute sin(i_count - s_count), tell me how many words are in the text, and also what's the weather in London. Use tools.
+
+--- Iteration 1 ---
+LLM wants to call 4 tool(s)
+  Tool: count_letter
+  Args: {'text': 'Mississippi riverboats', 'letter': 'i'}
+  Result: {"ok": true, "text": "Mississippi riverboats", "letter": "i", "count": 5}
+  Tool: count_letter
+  Args: {'text': 'Mississippi riverboats', 'letter': 's'}
+  Result: {"ok": true, "text": "Mississippi riverboats", "letter": "s", "count": 5}
+  Tool: word_count
+  Args: {'text': 'Mississippi riverboats'}
+  Result: {"ok": true, "text": "Mississippi riverboats", "count": 2}
+  Tool: get_weather
+  Args: {'location': 'London'}
+  Result: Rainy, 48°F
+
+--- Iteration 2 ---
+LLM wants to call 1 tool(s)
+  Tool: geo_calculator
+  Args: {'expr': 'sin(5 - 5)'}
+  Result: {"ok": true, "mode": "expr", "expr": "sin(5 - 5)", "value": 0.0}
+
+--- Iteration 3 ---
+Assistant: Here are the results from your request:
+
+- Count of 'i's: 5
+- Count of 's's: 5
+- The result of sin(i_count - s_count): 0.0
+- Number of words in the text: 2
+- Weather in London: Rainy, 48°F
+
+
+============================================================
+TEST: Try to hit 5-iteration limit
+============================================================
+User: Count i's and s's in 'Mississippi riverboats'. Compute d = i_count - s_count. Then compute sin(d), sin(sin(d)), sin(sin(sin(d))), sin(sin(sin(sin(d))))) and show each intermediate value. Use tools for every step.
+
+--- Iteration 1 ---
+LLM wants to call 2 tool(s)
+  Tool: count_letter
+  Args: {'text': 'Mississippi riverboats', 'letter': 'i'}
+  Result: {"ok": true, "text": "Mississippi riverboats", "letter": "i", "count": 5}
+  Tool: count_letter
+  Args: {'text': 'Mississippi riverboats', 'letter': 's'}
+  Result: {"ok": true, "text": "Mississippi riverboats", "letter": "s", "count": 5}
+
+--- Iteration 2 ---
+LLM wants to call 1 tool(s)
+  Tool: geo_calculator
+  Args: {'expr': '5 - 5'}
+  Result: {"ok": true, "mode": "expr", "expr": "5 - 5", "value": 0.0}
+
+--- Iteration 3 ---
+LLM wants to call 4 tool(s)
+  Tool: geo_calculator
+  Args: {'op': 'sin', 'a': 0}
+  Result: {"ok": false, "error": "Unknown or missing op/expr (op=sin)"}
+  Tool: geo_calculator
+  Args: {'op': 'sin', 'a': 0}
+  Result: {"ok": false, "error": "Unknown or missing op/expr (op=sin)"}
+  Tool: geo_calculator
+  Args: {'op': 'sin', 'a': 0}
+  Result: {"ok": false, "error": "Unknown or missing op/expr (op=sin)"}
+  Tool: geo_calculator
+  Args: {'op': 'sin', 'a': 0}
+  Result: {"ok": false, "error": "Unknown or missing op/expr (op=sin)"}
+
+--- Iteration 4 ---
+LLM wants to call 4 tool(s)
+  Tool: geo_calculator
+  Args: {'op': 'sin', 'a': 0}
+  Result: {"ok": false, "error": "Unknown or missing op/expr (op=sin)"}
+  Tool: geo_calculator
+  Args: {'op': 'sin', 'a': 0}
+  Result: {"ok": false, "error": "Unknown or missing op/expr (op=sin)"}
+  Tool: geo_calculator
+  Args: {'op': 'sin', 'a': 0}
+  Result: {"ok": false, "error": "Unknown or missing op/expr (op=sin)"}
+  Tool: geo_calculator
+  Args: {'op': 'sin', 'a': 0}
+  Result: {"ok": false, "error": "Unknown or missing op/expr (op=sin)"}
+
+--- Iteration 5 ---
+LLM wants to call 4 tool(s)
+  Tool: geo_calculator
+  Args: {'expr': 'sin(0)'}
+  Result: {"ok": true, "mode": "expr", "expr": "sin(0)", "value": 0.0}
+  Tool: geo_calculator
+  Args: {'expr': 'sin(sin(0))'}
+  Result: {"ok": true, "mode": "expr", "expr": "sin(sin(0))", "value": 0.0}
+  Tool: geo_calculator
+  Args: {'expr': 'sin(sin(sin(0)))'}
+  Result: {"ok": true, "mode": "expr", "expr": "sin(sin(sin(0)))", "value": 0.0}
+  Tool: geo_calculator
+  Args: {'expr': 'sin(sin(sin(sin(0))))'}
+  Result: {"ok": true, "mode": "expr", "expr": "sin(sin(sin(sin(0))))", "value": 0.0}
+
+
+Script done on 2026-01-29 19:46:33+00:00 [COMMAND_EXIT_CODE="0"]
