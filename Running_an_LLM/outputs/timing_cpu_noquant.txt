@@ -9,8 +9,7 @@ Environment Check
 ✓ Running locally (not in Colab)
 ✓ Platform: Darwin (arm64)
 ✓ Processor: arm
-✓ Apple Metal (MPS) Available
-✓ Using Metal Performance Shaders for GPU acceleration
+⚠️  No GPU detected - running on CPU
 ✓ Quantization disabled - loading full precision model
 ✓ Hugging Face authenticated
 
@@ -18,21 +17,20 @@ Environment Check
 Configuration
 ======================================================================
 Model: meta-llama/Llama-3.2-1B-Instruct
-Device: mps
+Device: cpu
 Quantization: None (full precision)
-Expected memory: ~2.5 GB (FP16)
+Expected memory: ~5 GB (FP32)
 Number of subjects: 2
 ======================================================================
 
 
 Loading model meta-llama/Llama-3.2-1B-Instruct...
-Device: mps
+Device: cpu
 ✓ Tokenizer loaded
 Loading model (this may take 2-3 minutes)...
 ✓ Model loaded successfully!
-  Model device: mps:0
-  Model dtype: torch.float16
-  Running on Apple Metal (MPS)
+  Model device: cpu
+  Model dtype: torch.float32
 
 ======================================================================
 Starting evaluation on 2 subjects
@@ -45,4 +43,4 @@ Progress: 1/2 subjects
 Evaluating subject: astronomy
 ======================================================================
 Testing astronomy:   0%|                                | 0/152 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
-Testing astronomy:   1%|▏                       | 1/152 [00:02<06:36,  2.62s/it]Testing astronomy:   1%|▎                       | 2/152 [00:03<03:34,  1.43s/it]Testing astronomy:   2%|▍                       | 3/152 [00:10<09:39,  3.89s/it]Testing astronomy:   3%|▋                       | 4/152 [00:26<21:47,  8.84s/it]Testing astronomy:   3%|▊                       | 5/152 [00:27<14:23,  5.87s/it]Testing astronomy:   4%|▉                       | 6/152 [00:27<09:51,  4.05s/it]Testing astronomy:   5%|█                       | 7/152 [00:28<07:18,  3.03s/it]Testing astronomy:   5%|█▎                      | 8/152 [00:29<05:30,  2.29s/it]Testing astronomy:   6%|█▍                      | 9/152 [00:30<04:21,  1.83s/it]Testing astronomy:   7%|█▌                     | 10/152 [00:33<05:35,  2.36s/it]Testing astronomy:   7%|█▋                     | 11/152 [00:34<04:50,  2.06s/it]Testing astronomy:   8%|█▊                     | 12/152 [00:37<05:17,  2.27s/it]Testing astronomy:   9%|█▉                     | 13/152 [00:39<04:48,  2.08s/it]Testing astronomy:   9%|██                     | 14/152 [00:49<10:38,  4.63s/it]Testing astronomy:  10%|██▎                    | 15/152 [00:50<07:47,  3.41s/it]Testing astronomy:  11%|██▍                    | 16/152 [00:50<05:32,  2.45s/it]Testing astronomy:  11%|██▌                    | 17/152 [00:51<04:19,  1.92s/it]Testing astronomy:  12%|██▋                    | 18/152 [00:52<04:03,  1.82s/it]Testing astronomy:  12%|██▉                    | 19/152 [00:53<03:22,  1.52s/it]Testing astronomy:  13%|███                    | 20/152 [00:54<02:53,  1.32s/it]Testing astronomy:  14%|███▏                   | 21/152 [00:55<02:22,  1.09s/it]Testing astronomy:  14%|███▎                   | 22/152 [00:55<02:09,  1.00it/s]Testing astronomy:  15%|███▍                   | 23/152 [00:56<02:01,  1.06it/s]Testing astronomy:  16%|███▋                   | 24/152 [00:57<01:55,  1.11it/s]Testing astronomy:  16%|███▊                   | 25/152 [00:57<01:31,  1.38it/s]Testing astronomy:  17%|███▉                   | 26/152 [00:58<01:33,  1.34it/s]Testing astronomy:  18%|████                   | 27/152 [00:59<01:27,  1.44it/s]Testing astronomy:  18%|████▏                  | 28/152 [00:59<01:26,  1.43it/s]Testing astronomy:  19%|████▍                  | 29/152 [01:00<01:20,  1.53it/s]Testing astronomy:  20%|████▌                  | 30/152 [01:01<01:18,  1.55it/s]Testing astronomy:  20%|████▋                  | 31/152 [01:02<01:40,  1.21it/s]Testing astronomy:  21%|████▊                  | 32/152 [01:03<01:39,  1.20it/s]Testing astronomy:  22%|████▉                  | 33/152 [01:04<01:40,  1.18it/s]Testing astronomy:  22%|█████▏                 | 34/152 [01:04<01:36,  1.22it/s]Testing astronomy:  23%|█████▎                 | 35/152 [01:05<01:32,  1.27it/s]Testing astronomy:  24%|█████▍                 | 36/152 [01:06<01:29,  1.30it/s]Testing astronomy:  24%|█████▌                 | 37/152 [01:07<01:37,  1.19it/s]Testing astronomy:  25%|█████▊                 | 38/152 [01:08<01:32,  1.23it/s]Testing astronomy:  26%|█████▉                 | 39/152 [01:09<01:37,  1.15it/s]Testing astronomy:  26%|██████                 | 40/152 [01:10<01:51,  1.00it/s]Testing astronomy:  27%|██████▏                | 41/152 [01:12<02:41,  1.46s/it]Testing astronomy:  28%|██████▎                | 42/152 [01:13<02:04,  1.13s/it]Testing astronomy:  28%|██████▌                | 43/152 [01:14<01:54,  1.05s/it]Testing astronomy:  29%|██████▋                | 44/152 [01:15<01:51,  1.03s/it]Testing astronomy:  30%|██████▊                | 45/152 [01:15<01:33,  1.15it/s]Testing astronomy:  30%|██████▉                | 46/152 [01:16<01:41,  1.04it/s]Testing astronomy:  31%|███████                | 47/152 [01:17<01:24,  1.25it/s]Testing astronomy:  32%|███████▎               | 48/152 [01:17<01:05,  1.58it/s]Testing astronomy:  32%|███████▍               | 49/152 [01:17<00:59,  1.73it/s]Testing astronomy:  33%|███████▌               | 50/152 [01:18<01:01,  1.65it/s]Testing astronomy:  34%|███████▋               | 51/152 [01:19<00:55,  1.81it/s]Testing astronomy:  34%|███████▊               | 52/152 [01:19<00:47,  2.09it/s]Testing astronomy:  35%|████████               | 53/152 [01:19<00:42,  2.35it/s]Testing astronomy:  36%|████████▏              | 54/152 [01:19<00:35,  2.79it/s]Testing astronomy:  36%|████████▎              | 55/152 [01:20<00:39,  2.44it/s]Testing astronomy:  37%|████████▍              | 56/152 [01:20<00:43,  2.21it/s]Testing astronomy:  38%|████████▋              | 57/152 [01:21<00:43,  2.20it/s]Testing astronomy:  38%|████████▊              | 58/152 [01:21<00:37,  2.48it/s]Testing astronomy:  39%|████████▉              | 59/152 [01:22<00:41,  2.26it/s]Testing astronomy:  39%|█████████              | 60/152 [01:22<00:36,  2.54it/s]Testing astronomy:  40%|█████████▏             | 61/152 [01:23<00:41,  2.19it/s]Testing astronomy:  41%|█████████▍             | 62/152 [01:23<00:37,  2.39it/s]Testing astronomy:  41%|█████████▌             | 63/152 [01:23<00:40,  2.20it/s]Testing astronomy:  42%|█████████▋             | 64/152 [01:24<00:35,  2.51it/s]Testing astronomy:  43%|█████████▊             | 65/152 [01:24<00:32,  2.71it/s]Testing astronomy:  43%|█████████▉             | 66/152 [01:25<00:36,  2.36it/s]Testing astronomy:  44%|██████████▏            | 67/152 [01:25<00:40,  2.11it/s]Testing astronomy:  45%|██████████▎            | 68/152 [01:26<00:41,  2.01it/s]Testing astronomy:  45%|██████████▍            | 69/152 [01:26<00:43,  1.89it/s]Testing astronomy:  46%|██████████▌            | 70/152 [01:27<00:39,  2.07it/s]Testing astronomy:  47%|██████████▋            | 71/152 [01:27<00:35,  2.29it/s]Testing astronomy:  47%|██████████▉            | 72/152 [01:28<00:38,  2.08it/s]Testing astronomy:  48%|███████████            | 73/152 [01:28<00:38,  2.04it/s]Testing astronomy:  49%|███████████▏           | 74/152 [01:29<00:42,  1.83it/s]Testing astronomy:  49%|███████████▎           | 75/152 [01:29<00:36,  2.13it/s]Testing astronomy:  50%|███████████▌           | 76/152 [01:29<00:32,  2.36it/s]Testing astronomy:  51%|███████████▋           | 77/152 [01:30<00:31,  2.41it/s]Testing astronomy:  51%|███████████▊           | 78/152 [01:32<01:15,  1.03s/it]Testing astronomy:  52%|███████████▉           | 79/152 [01:34<01:35,  1.30s/it]Testing astronomy:  53%|████████████           | 80/152 [01:37<02:15,  1.89s/it]Testing astronomy:  53%|████████████▎          | 81/152 [01:38<01:5
+Testing astronomy:   1%|▏                     | 1/152 [00:28<1:11:51, 28.55s/it]Testing astronomy:   1%|▎                     | 2/152 [01:13<1:36:00, 38.41s/it]
