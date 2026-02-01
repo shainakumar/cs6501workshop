@@ -1,0 +1,455 @@
+{
+  "quantization_bits": null,
+  "timestamp": "20260201_041432",
+  "device": "cuda",
+  "total_duration_seconds": 317.596189,
+  "subjects": [
+    "abstract_algebra",
+    "anatomy",
+    "astronomy",
+    "business_ethics",
+    "clinical_knowledge",
+    "college_biology",
+    "college_chemistry",
+    "college_computer_science",
+    "college_mathematics",
+    "college_medicine"
+  ],
+  "model_results": [
+    {
+      "model_name": "meta-llama/Llama-3.2-1B-Instruct",
+      "overall_accuracy": 43.31628926223521,
+      "valid_accuracy": 43.31628926223521,
+      "total_correct": 593,
+      "total_questions": 1369,
+      "total_invalid": 0,
+      "subject_results": [
+        {
+          "subject": "abstract_algebra",
+          "correct": 24,
+          "total": 100,
+          "invalid_responses": 0,
+          "accuracy": 24.0,
+          "valid_accuracy": 24.0,
+          "timing": {
+            "real_time": 3.693251132965088,
+            "cpu_time": 3.607493417999983,
+            "gpu_time": 3.683508728027343
+          }
+        },
+        {
+          "subject": "anatomy",
+          "correct": 65,
+          "total": 135,
+          "invalid_responses": 0,
+          "accuracy": 48.148148148148145,
+          "valid_accuracy": 48.148148148148145,
+          "timing": {
+            "real_time": 3.979416608810425,
+            "cpu_time": 3.951078885999987,
+            "gpu_time": 3.967967109680175
+          }
+        },
+        {
+          "subject": "astronomy",
+          "correct": 75,
+          "total": 152,
+          "invalid_responses": 0,
+          "accuracy": 49.34210526315789,
+          "valid_accuracy": 49.34210526315789,
+          "timing": {
+            "real_time": 4.301691293716431,
+            "cpu_time": 4.278743319000004,
+            "gpu_time": 4.289234909057617
+          }
+        },
+        {
+          "subject": "business_ethics",
+          "correct": 45,
+          "total": 100,
+          "invalid_responses": 0,
+          "accuracy": 45.0,
+          "valid_accuracy": 45.0,
+          "timing": {
+            "real_time": 2.8670942783355713,
+            "cpu_time": 2.8486285329999816,
+            "gpu_time": 2.8580090885162366
+          }
+        },
+        {
+          "subject": "clinical_knowledge",
+          "correct": 144,
+          "total": 265,
+          "invalid_responses": 0,
+          "accuracy": 54.339622641509436,
+          "valid_accuracy": 54.339622641509436,
+          "timing": {
+            "real_time": 8.058787107467651,
+            "cpu_time": 7.958566386999969,
+            "gpu_time": 8.03541562652588
+          }
+        },
+        {
+          "subject": "college_biology",
+          "correct": 76,
+          "total": 144,
+          "invalid_responses": 0,
+          "accuracy": 52.77777777777778,
+          "valid_accuracy": 52.77777777777778,
+          "timing": {
+            "real_time": 4.53481912612915,
+            "cpu_time": 4.4705173850000435,
+            "gpu_time": 4.517900407791139
+          }
+        },
+        {
+          "subject": "college_chemistry",
+          "correct": 35,
+          "total": 100,
+          "invalid_responses": 0,
+          "accuracy": 35.0,
+          "valid_accuracy": 35.0,
+          "timing": {
+            "real_time": 2.8207788467407227,
+            "cpu_time": 2.81445491300002,
+            "gpu_time": 2.8125489597320548
+          }
+        },
+        {
+          "subject": "college_computer_science",
+          "correct": 26,
+          "total": 100,
+          "invalid_responses": 0,
+          "accuracy": 26.0,
+          "valid_accuracy": 26.0,
+          "timing": {
+            "real_time": 2.993823289871216,
+            "cpu_time": 2.9884299359999815,
+            "gpu_time": 2.985437404632568
+          }
+        },
+        {
+          "subject": "college_mathematics",
+          "correct": 24,
+          "total": 100,
+          "invalid_responses": 0,
+          "accuracy": 24.0,
+          "valid_accuracy": 24.0,
+          "timing": {
+            "real_time": 3.429271697998047,
+            "cpu_time": 3.3238900890000096,
+            "gpu_time": 3.4193448581695542
+          }
+        },
+        {
+          "subject": "college_medicine",
+          "correct": 79,
+          "total": 173,
+          "invalid_responses": 0,
+          "accuracy": 45.664739884393065,
+          "valid_accuracy": 45.664739884393065,
+          "timing": {
+            "real_time": 6.481673717498779,
+            "cpu_time": 6.408615054000045,
+            "gpu_time": 6.465946308135987
+          }
+        }
+      ],
+      "total_timing": {
+        "real_time": 43.16060709953308,
+        "cpu_time": 42.650417920000024,
+        "gpu_time": 43.03531340026855
+      }
+    },
+    {
+      "model_name": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "overall_accuracy": 23.9590942293645,
+      "valid_accuracy": 24.188790560471976,
+      "total_correct": 328,
+      "total_questions": 1369,
+      "total_invalid": 13,
+      "subject_results": [
+        {
+          "subject": "abstract_algebra",
+          "correct": 15,
+          "total": 100,
+          "invalid_responses": 0,
+          "accuracy": 15.0,
+          "valid_accuracy": 15.0,
+          "timing": {
+            "real_time": 3.6727070808410645,
+            "cpu_time": 3.664857686000147,
+            "gpu_time": 3.662913700103759
+          }
+        },
+        {
+          "subject": "anatomy",
+          "correct": 32,
+          "total": 135,
+          "invalid_responses": 0,
+          "accuracy": 23.703703703703706,
+          "valid_accuracy": 23.703703703703706,
+          "timing": {
+            "real_time": 5.718128204345703,
+            "cpu_time": 5.588727011999865,
+            "gpu_time": 5.702587272644044
+          }
+        },
+        {
+          "subject": "astronomy",
+          "correct": 33,
+          "total": 152,
+          "invalid_responses": 0,
+          "accuracy": 21.710526315789476,
+          "valid_accuracy": 21.710526315789476,
+          "timing": {
+            "real_time": 5.7663140296936035,
+            "cpu_time": 5.738235878999944,
+            "gpu_time": 5.7490911369323765
+          }
+        },
+        {
+          "subject": "business_ethics",
+          "correct": 22,
+          "total": 100,
+          "invalid_responses": 1,
+          "accuracy": 22.0,
+          "valid_accuracy": 22.22222222222222,
+          "timing": {
+            "real_time": 3.7898895740509033,
+            "cpu_time": 3.785348593000066,
+            "gpu_time": 3.7785979003906243
+          }
+        },
+        {
+          "subject": "clinical_knowledge",
+          "correct": 75,
+          "total": 265,
+          "invalid_responses": 0,
+          "accuracy": 28.30188679245283,
+          "valid_accuracy": 28.30188679245283,
+          "timing": {
+            "real_time": 10.5561842918396,
+            "cpu_time": 10.431283845000081,
+            "gpu_time": 10.52639897155762
+          }
+        },
+        {
+          "subject": "college_biology",
+          "correct": 29,
+          "total": 144,
+          "invalid_responses": 0,
+          "accuracy": 20.13888888888889,
+          "valid_accuracy": 20.13888888888889,
+          "timing": {
+            "real_time": 5.737322807312012,
+            "cpu_time": 5.669465642000077,
+            "gpu_time": 5.721607994079589
+          }
+        },
+        {
+          "subject": "college_chemistry",
+          "correct": 32,
+          "total": 100,
+          "invalid_responses": 2,
+          "accuracy": 32.0,
+          "valid_accuracy": 32.6530612244898,
+          "timing": {
+            "real_time": 3.794752597808838,
+            "cpu_time": 3.7834047629999787,
+            "gpu_time": 3.7840261154174804
+          }
+        },
+        {
+          "subject": "college_computer_science",
+          "correct": 25,
+          "total": 100,
+          "invalid_responses": 4,
+          "accuracy": 25.0,
+          "valid_accuracy": 26.041666666666668,
+          "timing": {
+            "real_time": 3.9057300090789795,
+            "cpu_time": 3.886120309999953,
+            "gpu_time": 3.895477176666259
+          }
+        },
+        {
+          "subject": "college_mathematics",
+          "correct": 28,
+          "total": 100,
+          "invalid_responses": 5,
+          "accuracy": 28.000000000000004,
+          "valid_accuracy": 29.47368421052631,
+          "timing": {
+            "real_time": 3.7668516635894775,
+            "cpu_time": 3.757328247999993,
+            "gpu_time": 3.75652297592163
+          }
+        },
+        {
+          "subject": "college_medicine",
+          "correct": 37,
+          "total": 173,
+          "invalid_responses": 1,
+          "accuracy": 21.38728323699422,
+          "valid_accuracy": 21.511627906976745,
+          "timing": {
+            "real_time": 8.752450942993164,
+            "cpu_time": 8.632677770999862,
+            "gpu_time": 8.734068710327154
+          }
+        }
+      ],
+      "total_timing": {
+        "real_time": 55.460331201553345,
+        "cpu_time": 54.93744974899997,
+        "gpu_time": 55.31129195404054
+      }
+    },
+    {
+      "model_name": "Qwen/Qwen2.5-0.5B-Instruct",
+      "overall_accuracy": 39.95617238860482,
+      "valid_accuracy": 40.42867701404287,
+      "total_correct": 547,
+      "total_questions": 1369,
+      "total_invalid": 16,
+      "subject_results": [
+        {
+          "subject": "abstract_algebra",
+          "correct": 29,
+          "total": 100,
+          "invalid_responses": 1,
+          "accuracy": 28.999999999999996,
+          "valid_accuracy": 29.292929292929294,
+          "timing": {
+            "real_time": 4.6591877937316895,
+            "cpu_time": 4.529734245999975,
+            "gpu_time": 4.648328456878662
+          }
+        },
+        {
+          "subject": "anatomy",
+          "correct": 59,
+          "total": 135,
+          "invalid_responses": 0,
+          "accuracy": 43.7037037037037,
+          "valid_accuracy": 43.7037037037037,
+          "timing": {
+            "real_time": 5.584411859512329,
+            "cpu_time": 5.571217094000133,
+            "gpu_time": 5.5714301452636725
+          }
+        },
+        {
+          "subject": "astronomy",
+          "correct": 65,
+          "total": 152,
+          "invalid_responses": 0,
+          "accuracy": 42.76315789473684,
+          "valid_accuracy": 42.76315789473684,
+          "timing": {
+            "real_time": 6.807559490203857,
+            "cpu_time": 6.701011068000042,
+            "gpu_time": 6.791649742126467
+          }
+        },
+        {
+          "subject": "business_ethics",
+          "correct": 51,
+          "total": 100,
+          "invalid_responses": 0,
+          "accuracy": 51.0,
+          "valid_accuracy": 51.0,
+          "timing": {
+            "real_time": 4.100674629211426,
+            "cpu_time": 4.0886534049997465,
+            "gpu_time": 4.090719249725343
+          }
+        },
+        {
+          "subject": "clinical_knowledge",
+          "correct": 122,
+          "total": 265,
+          "invalid_responses": 0,
+          "accuracy": 46.0377358490566,
+          "valid_accuracy": 46.0377358490566,
+          "timing": {
+            "real_time": 11.10412049293518,
+            "cpu_time": 11.03269162699982,
+            "gpu_time": 11.078321010589592
+          }
+        },
+        {
+          "subject": "college_biology",
+          "correct": 62,
+          "total": 144,
+          "invalid_responses": 1,
+          "accuracy": 43.05555555555556,
+          "valid_accuracy": 43.35664335664335,
+          "timing": {
+            "real_time": 5.851022005081177,
+            "cpu_time": 5.833890555999943,
+            "gpu_time": 5.8378562965393055
+          }
+        },
+        {
+          "subject": "college_chemistry",
+          "correct": 28,
+          "total": 100,
+          "invalid_responses": 0,
+          "accuracy": 28.000000000000004,
+          "valid_accuracy": 28.000000000000004,
+          "timing": {
+            "real_time": 4.815070390701294,
+            "cpu_time": 4.698849057000018,
+            "gpu_time": 4.8032842788696275
+          }
+        },
+        {
+          "subject": "college_computer_science",
+          "correct": 30,
+          "total": 100,
+          "invalid_responses": 2,
+          "accuracy": 30.0,
+          "valid_accuracy": 30.612244897959183,
+          "timing": {
+            "real_time": 4.177172899246216,
+            "cpu_time": 4.167875217999978,
+            "gpu_time": 4.166707080841063
+          }
+        },
+        {
+          "subject": "college_mathematics",
+          "correct": 29,
+          "total": 100,
+          "invalid_responses": 12,
+          "accuracy": 28.999999999999996,
+          "valid_accuracy": 32.95454545454545,
+          "timing": {
+            "real_time": 4.796921253204346,
+            "cpu_time": 4.681383437999926,
+            "gpu_time": 4.785767402648925
+          }
+        },
+        {
+          "subject": "college_medicine",
+          "correct": 72,
+          "total": 173,
+          "invalid_responses": 0,
+          "accuracy": 41.61849710982659,
+          "valid_accuracy": 41.61849710982659,
+          "timing": {
+            "real_time": 7.69449257850647,
+            "cpu_time": 7.64878098799997,
+            "gpu_time": 7.67665023422241
+          }
+        }
+      ],
+      "total_timing": {
+        "real_time": 59.590633392333984,
+        "cpu_time": 58.95408669699955,
+        "gpu_time": 59.450713897705064
+      }
+    }
+  ]
+}
