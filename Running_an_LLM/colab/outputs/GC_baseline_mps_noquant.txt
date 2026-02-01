@@ -1,0 +1,123 @@
+Script started on 2026-02-01 03:14:53+00:00 [TERM="xterm-color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
+
+======================================================================
+Llama 3.2-1B MMLU Evaluation (Quantized)
+======================================================================
+
+======================================================================
+Environment Check
+======================================================================
+✓ Running in Google Colab
+✓ Platform: Linux (x86_64)
+✓ GPU Available: Tesla T4
+✓ GPU Memory: 15.83 GB
+✓ Quantization disabled - loading full precision model
+✓ Hugging Face authenticated
+
+======================================================================
+Configuration
+======================================================================
+Model: meta-llama/Llama-3.2-1B-Instruct
+Device: cuda
+Quantization: None (full precision)
+Expected memory: ~2.5 GB (FP16)
+Number of subjects: 2
+======================================================================
+
+
+Loading model meta-llama/Llama-3.2-1B-Instruct...
+Device: cuda
+tokenizer_config.json:   0% 0.00/54.5k [00:00<?, ?B/s]tokenizer_config.json: 100% 54.5k/54.5k [00:00<00:00, 1.29MB/s]
+tokenizer.json:   0% 0.00/9.09M [00:00<?, ?B/s]tokenizer.json: 100% 9.09M/9.09M [00:01<00:00, 6.95MB/s]tokenizer.json: 100% 9.09M/9.09M [00:01<00:00, 6.93MB/s]
+special_tokens_map.json:   0% 0.00/296 [00:00<?, ?B/s]special_tokens_map.json: 100% 296/296 [00:00<00:00, 2.27MB/s]
+✓ Tokenizer loaded
+Loading model (this may take 2-3 minutes)...
+config.json:   0% 0.00/877 [00:00<?, ?B/s]config.json: 100% 877/877 [00:00<00:00, 6.80MB/s]
+2026-02-01 03:15:13.373171: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1769915713.392351    6790 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1769915713.397247    6790 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1769915713.409817    6790 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1769915713.409837    6790 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1769915713.409841    6790 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1769915713.409845    6790 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-02-01 03:15:13.414809: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+model.safetensors:   0% 0.00/2.47G [00:00<?, ?B/s]model.safetensors:   0% 753k/2.47G [00:01<1:43:44, 397kB/s]model.safetensors:   0% 2.08M/2.47G [00:02<45:29, 905kB/s] model.safetensors:   6% 136M/2.47G [00:03<00:37, 61.6MB/s]model.safetensors:   8% 203M/2.47G [00:04<00:30, 74.6MB/s]model.safetensors:  11% 270M/2.47G [00:04<00:30, 72.6MB/s]model.safetensors:  14% 337M/2.47G [00:05<00:23, 92.5MB/s]model.safetensors:  16% 404M/2.47G [00:05<00:18, 113MB/s] model.safetensors:  19% 471M/2.47G [00:06<00:15, 129MB/s]model.safetensors:  22% 538M/2.47G [00:06<00:13, 146MB/s]model.safetensors:  24% 605M/2.47G [00:06<00:10, 174MB/s]model.safetensors:  28% 690M/2.47G [00:07<00:10, 166MB/s]model.safetensors:  30% 729M/2.47G [00:07<00:13, 126MB/s]model.safetensors:  32% 796M/2.47G [00:10<00:31, 53.0MB/s]model.safetensors:  35% 863M/2.47G [00:10<00:21, 74.2MB/s]model.safetensors:  38% 931M/2.47G [00:10<00:15, 100MB/s] model.safetensors:  40% 998M/2.47G [00:10<00:11, 131MB/s]model.safetensors:  43% 1.06G/2.47G [00:11<00:08, 169MB/s]model.safetensors:  46% 1.13G/2.47G [00:11<00:06, 199MB/s]model.safetensors:  49% 1.20G/2.47G [00:11<00:05, 220MB/s]model.safetensors:  51% 1.27G/2.47G [00:11<00:05, 228MB/s]model.safetensors:  54% 1.33G/2.47G [00:12<00:04, 235MB/s]model.safetensors:  57% 1.40G/2.47G [00:12<00:04, 240MB/s]model.safetensors:  59% 1.47G/2.47G [00:14<00:13, 75.6MB/s]model.safetensors:  65% 1.60G/2.47G [00:14<00:06, 127MB/s] model.safetensors:  67% 1.67G/2.47G [00:15<00:05, 155MB/s]model.safetensors:  70% 1.73G/2.47G [00:15<00:04, 183MB/s]model.safetensors:  76% 1.87G/2.47G [00:15<00:02, 236MB/s]model.safetensors:  78% 1.94G/2.47G [00:15<00:02, 239MB/s]model.safetensors:  81% 2.00G/2.47G [00:16<00:01, 242MB/s]model.safetensors:  84% 2.07G/2.47G [00:16<00:01, 246MB/s]model.safetensors:  86% 2.14G/2.47G [00:16<00:01, 249MB/s]model.safetensors:  89% 2.20G/2.47G [00:18<00:03, 82.7MB/s]model.safetensors:  95% 2.34G/2.47G [00:19<00:01, 133MB/s] model.safetensors: 100% 2.47G/2.47G [00:19<00:00, 186MB/s]model.safetensors: 100% 2.47G/2.47G [00:19<00:00, 128MB/s]
+generation_config.json:   0% 0.00/189 [00:00<?, ?B/s]generation_config.json: 100% 189/189 [00:00<00:00, 1.11MB/s]
+✓ Model loaded successfully!
+  Model device: cuda:0
+  Model dtype: torch.float16
+  GPU Memory: 2.47 GB allocated, 2.51 GB reserved
+
+======================================================================
+Starting evaluation on 2 subjects
+======================================================================
+
+
+Progress: 1/2 subjects
+
+======================================================================
+Evaluating subject: astronomy
+======================================================================
+README.md: 0.00B [00:00, ?B/s]README.md: 53.2kB [00:00, 7.81MB/s]
+dataset_infos.json: 0.00B [00:00, ?B/s]dataset_infos.json: 138kB [00:00, 252MB/s]
+astronomy/test-00000-of-00001.parquet:   0% 0.00/28.3k [00:00<?, ?B/s]astronomy/test-00000-of-00001.parquet: 100% 28.3k/28.3k [00:00<00:00, 56.9kB/s]astronomy/test-00000-of-00001.parquet: 100% 28.3k/28.3k [00:00<00:00, 56.9kB/s]
+astronomy/validation-00000-of-00001.parq(…):   0% 0.00/6.05k [00:00<?, ?B/s]astronomy/validation-00000-of-00001.parq(…): 100% 6.05k/6.05k [00:00<00:00, 12.3kB/s]astronomy/validation-00000-of-00001.parq(…): 100% 6.05k/6.05k [00:00<00:00, 12.3kB/s]
+astronomy/dev-00000-of-00001.parquet:   0% 0.00/4.94k [00:00<?, ?B/s]astronomy/dev-00000-of-00001.parquet: 100% 4.94k/4.94k [00:00<00:00, 10.1kB/s]astronomy/dev-00000-of-00001.parquet: 100% 4.94k/4.94k [00:00<00:00, 10.1kB/s]
+Generating test split:   0% 0/152 [00:00<?, ? examples/s]Generating test split: 100% 152/152 [00:00<00:00, 5783.36 examples/s]
+Generating validation split:   0% 0/16 [00:00<?, ? examples/s]Generating validation split: 100% 16/16 [00:00<00:00, 6972.35 examples/s]
+Generating dev split:   0% 0/5 [00:00<?, ? examples/s]Generating dev split: 100% 5/5 [00:00<00:00, 2625.71 examples/s]
+Testing astronomy:   0% 0/152 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Testing astronomy:   1% 1/152 [00:00<02:21,  1.07it/s]Testing astronomy:   3% 4/152 [00:01<00:31,  4.68it/s]Testing astronomy:   5% 7/152 [00:01<00:17,  8.24it/s]Testing astronomy:   7% 10/152 [00:01<00:12, 11.46it/s]Testing astronomy:   9% 13/152 [00:01<00:09, 14.89it/s]Testing astronomy:  11% 16/152 [00:01<00:07, 17.49it/s]Testing astronomy:  12% 19/152 [00:01<00:06, 19.95it/s]Testing astronomy:  14% 22/152 [00:01<00:05, 22.35it/s]Testing astronomy:  16% 25/152 [00:01<00:05, 24.10it/s]Testing astronomy:  18% 28/152 [00:01<00:04, 25.49it/s]Testing astronomy:  21% 32/152 [00:02<00:04, 27.18it/s]Testing astronomy:  23% 35/152 [00:02<00:04, 27.84it/s]Testing astronomy:  26% 39/152 [00:02<00:03, 28.83it/s]Testing astronomy:  28% 42/152 [00:02<00:03, 28.25it/s]Testing astronomy:  30% 45/152 [00:02<00:03, 27.00it/s]Testing astronomy:  32% 48/152 [00:02<00:03, 26.00it/s]Testing astronomy:  34% 51/152 [00:02<00:03, 26.62it/s]Testing astronomy:  36% 54/152 [00:02<00:03, 26.26it/s]Testing astronomy:  38% 57/152 [00:03<00:03, 25.88it/s]Testing astronomy:  39% 60/152 [00:03<00:03, 25.32it/s]Testing astronomy:  41% 63/152 [00:03<00:03, 25.33it/s]Testing astronomy:  44% 67/152 [00:03<00:03, 27.87it/s]Testing astronomy:  47% 71/152 [00:03<00:02, 30.47it/s]Testing astronomy:  49% 75/152 [00:03<00:02, 31.53it/s]Testing astronomy:  52% 79/152 [00:03<00:02, 33.41it/s]Testing astronomy:  55% 83/152 [00:03<00:02, 34.11it/s]Testing astronomy:  57% 87/152 [00:03<00:01, 35.27it/s]Testing astronomy:  60% 91/152 [00:04<00:01, 35.83it/s]Testing astronomy:  62% 95/152 [00:04<00:01, 36.02it/s]Testing astronomy:  65% 99/152 [00:04<00:01, 36.33it/s]Testing astronomy:  68% 103/152 [00:04<00:01, 35.21it/s]Testing astronomy:  70% 107/152 [00:04<00:01, 35.97it/s]Testing astronomy:  73% 111/152 [00:04<00:01, 35.24it/s]Testing astronomy:  76% 115/152 [00:04<00:01, 35.23it/s]Testing astronomy:  78% 119/152 [00:04<00:00, 35.90it/s]Testing astronomy:  81% 123/152 [00:04<00:00, 36.06it/s]Testing astronomy:  84% 127/152 [00:05<00:00, 35.94it/s]Testing astronomy:  86% 131/152 [00:05<00:00, 36.43it/s]Testing astronomy:  89% 135/152 [00:05<00:00, 36.48it/s]Testing astronomy:  91% 139/152 [00:05<00:00, 36.70it/s]Testing astronomy:  94% 143/152 [00:05<00:00, 37.01it/s]Testing astronomy:  97% 147/152 [00:05<00:00, 37.10it/s]Testing astronomy:  99% 151/152 [00:05<00:00, 34.82it/s]Testing astronomy: 100% 152/152 [00:05<00:00, 26.47it/s]
+✓ Result: 75/152 correct = 49.34%
+
+Progress: 2/2 subjects
+
+======================================================================
+Evaluating subject: business_ethics
+======================================================================
+business_ethics/test-00000-of-00001.parq(…):   0% 0.00/21.6k [00:00<?, ?B/s]business_ethics/test-00000-of-00001.parq(…): 100% 21.6k/21.6k [00:00<00:00, 41.5kB/s]business_ethics/test-00000-of-00001.parq(…): 100% 21.6k/21.6k [00:00<00:00, 41.5kB/s]
+business_ethics/validation-00000-of-0000(…):   0% 0.00/5.09k [00:00<?, ?B/s]business_ethics/validation-00000-of-0000(…): 100% 5.09k/5.09k [00:00<00:00, 10.4kB/s]business_ethics/validation-00000-of-0000(…): 100% 5.09k/5.09k [00:00<00:00, 10.4kB/s]
+business_ethics/dev-00000-of-00001.parqu(…):   0% 0.00/4.96k [00:00<?, ?B/s]business_ethics/dev-00000-of-00001.parqu(…): 100% 4.96k/4.96k [00:00<00:00, 10.5kB/s]business_ethics/dev-00000-of-00001.parqu(…): 100% 4.96k/4.96k [00:00<00:00, 10.5kB/s]
+Generating test split:   0% 0/100 [00:00<?, ? examples/s]Generating test split: 100% 100/100 [00:00<00:00, 37715.17 examples/s]
+Generating validation split:   0% 0/11 [00:00<?, ? examples/s]Generating validation split: 100% 11/11 [00:00<00:00, 4714.63 examples/s]
+Generating dev split:   0% 0/5 [00:00<?, ? examples/s]Generating dev split: 100% 5/5 [00:00<00:00, 2557.81 examples/s]
+Testing business_ethics:   0% 0/100 [00:00<?, ?it/s]Testing business_ethics:   4% 4/100 [00:00<00:02, 32.22it/s]Testing business_ethics:   8% 8/100 [00:00<00:02, 34.03it/s]Testing business_ethics:  12% 12/100 [00:00<00:02, 35.60it/s]Testing business_ethics:  16% 16/100 [00:00<00:02, 35.95it/s]Testing business_ethics:  20% 20/100 [00:00<00:02, 35.91it/s]Testing business_ethics:  24% 24/100 [00:00<00:02, 36.25it/s]Testing business_ethics:  28% 28/100 [00:00<00:02, 35.41it/s]Testing business_ethics:  32% 32/100 [00:00<00:01, 35.98it/s]Testing business_ethics:  36% 36/100 [00:01<00:01, 35.60it/s]Testing business_ethics:  40% 40/100 [00:01<00:01, 36.06it/s]Testing business_ethics:  44% 44/100 [00:01<00:01, 36.49it/s]Testing business_ethics:  48% 48/100 [00:01<00:01, 36.59it/s]Testing business_ethics:  52% 52/100 [00:01<00:01, 36.82it/s]Testing business_ethics:  56% 56/100 [00:01<00:01, 37.18it/s]Testing business_ethics:  60% 60/100 [00:01<00:01, 36.28it/s]Testing business_ethics:  64% 64/100 [00:01<00:01, 35.27it/s]Testing business_ethics:  68% 68/100 [00:01<00:00, 35.92it/s]Testing business_ethics:  72% 72/100 [00:02<00:00, 36.02it/s]Testing business_ethics:  76% 76/100 [00:02<00:00, 36.49it/s]Testing business_ethics:  80% 80/100 [00:02<00:00, 36.85it/s]Testing business_ethics:  84% 84/100 [00:02<00:00, 32.33it/s]Testing business_ethics:  88% 88/100 [00:02<00:00, 31.07it/s]Testing business_ethics:  92% 92/100 [00:02<00:00, 30.19it/s]Testing business_ethics:  96% 96/100 [00:02<00:00, 29.70it/s]Testing business_ethics: 100% 100/100 [00:02<00:00, 29.16it/s]Testing business_ethics: 100% 100/100 [00:02<00:00, 34.03it/s]
+✓ Result: 45/100 correct = 45.00%
+
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: meta-llama/Llama-3.2-1B-Instruct
+None (full precision)
+Total Subjects: 2
+Total Questions: 252
+Total Correct: 120
+Overall Accuracy: 47.62%
+Duration: 0.4 minutes
+======================================================================
+
+✓ Results saved to: llama_3.2_1b_mmlu_results_full_20260201_031604.json
+
+📊 Top 5 Subjects:
+  1. astronomy: 49.34%
+  2. business_ethics: 45.00%
+
+📉 Bottom 5 Subjects:
+  1. astronomy: 49.34%
+  2. business_ethics: 45.00%
+
+======================================================================
+💾 To download results in Colab:
+======================================================================
+from google.colab import files
+files.download('llama_3.2_1b_mmlu_results_full_20260201_031604.json')
+
+✅ Evaluation complete!
+
+real	1m14.083s
+user	0m36.124s
+sys	0m9.466s
+
+Script done on 2026-02-01 03:16:07+00:00 [COMMAND_EXIT_CODE="0"]

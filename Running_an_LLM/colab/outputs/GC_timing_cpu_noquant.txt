@@ -1,0 +1,102 @@
+Script started on 2026-02-01 03:20:06+00:00 [TERM="xterm-color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
+
+======================================================================
+Llama 3.2-1B MMLU Evaluation (Quantized)
+======================================================================
+
+======================================================================
+Environment Check
+======================================================================
+✓ Running in Google Colab
+✓ Platform: Linux (x86_64)
+⚠️  No GPU detected - running on CPU
+✓ Quantization disabled - loading full precision model
+✓ Hugging Face authenticated
+
+======================================================================
+Configuration
+======================================================================
+Model: meta-llama/Llama-3.2-1B-Instruct
+Device: cpu
+Quantization: None (full precision)
+Expected memory: ~5 GB (FP32)
+Number of subjects: 2
+======================================================================
+
+
+Loading model meta-llama/Llama-3.2-1B-Instruct...
+Device: cpu
+✓ Tokenizer loaded
+Loading model (this may take 2-3 minutes)...
+2026-02-01 03:20:16.139099: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1769916016.158749    8212 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1769916016.163921    8212 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1769916016.178730    8212 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1769916016.178753    8212 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1769916016.178758    8212 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1769916016.178762    8212 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-02-01 03:20:16.185299: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+✓ Model loaded successfully!
+  Model device: cpu
+  Model dtype: torch.float32
+  GPU Memory: 0.00 GB allocated, 0.00 GB reserved
+
+======================================================================
+Starting evaluation on 2 subjects
+======================================================================
+
+
+Progress: 1/2 subjects
+
+======================================================================
+Evaluating subject: astronomy
+======================================================================
+Testing astronomy:   0% 0/152 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Testing astronomy:   1% 1/152 [00:02<05:12,  2.07s/it]Testing astronomy:   1% 2/152 [00:04<04:59,  1.99s/it]Testing astronomy:   2% 3/152 [00:06<05:36,  2.26s/it]Testing astronomy:   3% 4/152 [00:09<06:26,  2.61s/it]Testing astronomy:   3% 5/152 [00:11<05:53,  2.40s/it]Testing astronomy:   4% 6/152 [00:14<05:50,  2.40s/it]Testing astronomy:   5% 7/152 [00:17<06:20,  2.62s/it]Testing astronomy:   5% 8/152 [00:19<06:20,  2.64s/it]Testing astronomy:   6% 9/152 [00:21<05:51,  2.46s/it]Testing astronomy:   7% 10/152 [00:25<06:48,  2.88s/it]Testing astronomy:   7% 11/152 [00:28<06:31,  2.77s/it]Testing astronomy:   8% 12/152 [00:31<06:38,  2.85s/it]Testing astronomy:   9% 13/152 [00:33<06:12,  2.68s/it]Testing astronomy:   9% 14/152 [00:36<06:06,  2.66s/it]Testing astronomy:  10% 15/152 [00:38<05:35,  2.45s/it]Testing astronomy:  11% 16/152 [00:39<05:00,  2.21s/it]Testing astronomy:  11% 17/152 [00:42<05:00,  2.23s/it]Testing astronomy:  12% 18/152 [00:44<05:19,  2.38s/it]Testing astronomy:  12% 19/152 [00:47<05:23,  2.43s/it]Testing astronomy:  13% 20/152 [00:50<05:28,  2.49s/it]Testing astronomy:  14% 21/152 [00:54<06:33,  3.00s/it]Testing astronomy:  14% 22/152 [00:56<06:00,  2.78s/it]Testing astronomy:  15% 23/152 [00:59<06:06,  2.84s/it]Testing astronomy:  16% 24/152 [01:01<05:49,  2.73s/it]Testing astronomy:  16% 25/152 [01:04<05:23,  2.55s/it]Testing astronomy:  17% 26/152 [01:05<04:56,  2.36s/it]Testing astronomy:  18% 27/152 [01:08<04:50,  2.32s/it]Testing astronomy:  18% 28/152 [01:10<04:32,  2.20s/it]Testing astronomy:  19% 29/152 [01:12<04:48,  2.35s/it]Testing astronomy:  20% 30/152 [01:15<04:52,  2.40s/it]Testing astronomy:  20% 31/152 [01:18<05:23,  2.68s/it]Testing astronomy:  21% 32/152 [01:21<05:12,  2.60s/it]Testing astronomy:  22% 33/152 [01:22<04:38,  2.34s/it]Testing astronomy:  22% 34/152 [01:25<04:40,  2.38s/it]Testing astronomy:  23% 35/152 [01:28<04:50,  2.49s/it]Testing astronomy:  24% 36/152 [01:30<04:43,  2.44s/it]Testing astronomy:  24% 37/152 [01:32<04:31,  2.36s/it]Testing astronomy:  25% 38/152 [01:34<04:13,  2.23s/it]Testing astronomy:  26% 39/152 [01:37<04:41,  2.49s/it]Testing astronomy:  26% 40/152 [01:40<05:03,  2.71s/it]Testing astronomy:  27% 41/152 [01:43<04:59,  2.70s/it]Testing astronomy:  28% 42/152 [01:45<04:31,  2.47s/it]Testing astronomy:  28% 43/152 [01:47<04:23,  2.42s/it]Testing astronomy:  29% 44/152 [01:50<04:24,  2.45s/it]Testing astronomy:  30% 45/152 [01:52<04:32,  2.54s/it]Testing astronomy:  30% 46/152 [01:55<04:27,  2.53s/it]Testing astronomy:  31% 47/152 [01:57<04:06,  2.35s/it]Testing astronomy:  32% 48/152 [01:59<03:45,  2.17s/it]Testing astronomy:  32% 49/152 [02:01<03:54,  2.28s/it]Testing astronomy:  33% 50/152 [02:05<04:34,  2.70s/it]Testing astronomy:  34% 51/152 [02:07<04:20,  2.58s/it]Testing astronomy:  34% 52/152 [02:09<04:01,  2.41s/it]Testing astronomy:  35% 53/152 [02:11<03:54,  2.36s/it]Testing astronomy:  36% 54/152 [02:13<03:34,  2.19s/it]Testing astronomy:  36% 55/152 [02:15<03:29,  2.16s/it]Testing astronomy:  37% 56/152 [02:19<04:09,  2.60s/it]Testing astronomy:  38% 57/152 [02:21<03:40,  2.32s/it]Testing astronomy:  38% 58/152 [02:23<03:41,  2.35s/it]Testing astronomy:  39% 59/152 [02:25<03:26,  2.22s/it]Testing astronomy:  39% 60/152 [02:27<03:26,  2.25s/it]Testing astronomy:  40% 61/152 [02:30<03:32,  2.34s/it]Testing astronomy:  41% 62/152 [02:32<03:37,  2.42s/it]Testing astronomy:  41% 63/152 [02:35<03:30,  2.36s/it]Testing astronomy:  42% 64/152 [02:37<03:16,  2.24s/it]Testing astronomy:  43% 65/152 [02:41<04:03,  2.80s/it]Testing astronomy:  43% 66/152 [02:44<04:04,  2.84s/it]Testing astronomy:  44% 67/152 [02:46<03:51,  2.72s/it]Testing astronomy:  45% 68/152 [02:48<03:27,  2.47s/it]Testing astronomy:  45% 69/152 [02:50<03:23,  2.45s/it]Testing astronomy:  46% 70/152 [02:53<03:21,  2.46s/it]Testing astronomy:  47% 71/152 [02:55<03:17,  2.44s/it]Testing astronomy:  47% 72/152 [02:58<03:30,  2.63s/it]Testing astronomy:  48% 73/152 [03:01<03:18,  2.52s/it]Testing astronomy:  49% 74/152 [03:02<03:00,  2.31s/it]Testing astronomy:  49% 75/152 [03:04<02:51,  2.23s/it]Testing astronomy:  50% 76/152 [03:07<02:47,  2.20s/it]Testing astronomy:  51% 77/152 [03:10<03:09,  2.53s/it]Testing astronomy:  51% 78/152 [03:12<02:52,  2.32s/it]Testing astronomy:  52% 79/152 [03:14<02:48,  2.31s/it]Testing astronomy:  53% 80/152 [03:16<02:33,  2.13s/it]Testing astronomy:  53% 81/152 [03:19<02:53,  2.44s/it]Testing astronomy:  54% 82/152 [03:21<02:54,  2.49s/it]Testing astronomy:  55% 83/152 [03:24<03:01,  2.62s/it]Testing astronomy:  55% 84/152 [03:27<03:02,  2.69s/it]Testing astronomy:  56% 85/152 [03:29<02:44,  2.45s/it]Testing astronomy:  57% 86/152 [03:32<02:48,  2.55s/it]Testing astronomy:  57% 87/152 [03:34<02:30,  2.32s/it]Testing astronomy:  58% 88/152 [03:37<02:44,  2.57s/it]Testing astronomy:  59% 89/152 [03:39<02:35,  2.47s/it]Testing astronomy:  59% 90/152 [03:41<02:22,  2.30s/it]Testing astronomy:  60% 91/152 [03:44<02:29,  2.44s/it]Testing astronomy:  61% 92/152 [03:46<02:21,  2.35s/it]Testing astronomy:  61% 93/152 [03:49<02:37,  2.68s/it]Testing astronomy:  62% 94/152 [03:52<02:27,  2.55s/it]Testing astronomy:  62% 95/152 [03:54<02:18,  2.43s/it]Testing astronomy:  63% 96/152 [03:56<02:13,  2.38s/it]Testing astronomy:  64% 97/152 [03:58<02:01,  2.21s/it]Testing astronomy:  64% 98/152 [04:00<01:57,  2.17s/it]Testing astronomy:  65% 99/152 [04:03<02:04,  2.35s/it]Testing astronomy:  66% 100/152 [04:04<01:53,  2.18s/it]Testing astronomy:  66% 101/152 [04:07<01:53,  2.23s/it]Testing astronomy:  67% 102/152 [04:09<01:47,  2.14s/it]Testing astronomy:  68% 103/152 [04:11<01:41,  2.07s/it]Testing astronomy:  68% 104/152 [04:13<01:38,  2.06s/it]Testing astronomy:  69% 105/152 [04:16<01:49,  2.33s/it]Testing astronomy:  70% 106/152 [04:17<01:38,  2.15s/it]Testing astronomy:  70% 107/152 [04:20<01:40,  2.23s/it]Testing astronomy:  71% 108/152 [04:22<01:32,  2.10s/it]Testing astronomy:  72% 109/152 [04:24<01:30,  2.11s/it]Testing astronomy:  72% 110/152 [04:29<02:07,  3.04s/it]Testing astronomy:  73% 111/152 [04:31<01:56,  2.85s/it]Testing astronomy:  74% 112/152 [04:33<01:43,  2.59s/it]Testing astronomy:  74% 113/152 [04:36<01:37,  2.49s/it]Testing astronomy:  75% 114/152 [04:38<01:35,  2.52s/it]Testing astronomy:  76% 115/152 [04:41<01:40,  2.72s/it]Testing astronomy:  76% 116/152 [04:43<01:29,  2.50s/it]Testing astronomy:  77% 117/152 [04:47<01:40,  2.87s/it]Testing astronomy:  78% 118/152 [04:50<01:35,  2.82s/it]Testing astronomy:  78% 119/152 [04:53<01:34,  2.88s/it]Testing astronomy:  79% 120/152 [04:55<01:28,  2.78s/it]Testing astronomy:  80% 121/152 [04:58<01:25,  2.77s/it]Testing astronomy:  80% 122/152 [05:00<01:15,  2.51s/it]Testing astronomy:  81% 123/152 [05:02<01:06,  2.29s/it]Testing astronomy:  82% 124/152 [05:04<01:01,  2.21s/it]Testing astronomy:  82% 125/152 [05:06<01:01,  2.29s/it]Testing astronomy:  83% 126/152 [05:08<00:55,  2.15s/it]Testing astronomy:  84% 127/152 [05:11<00:58,  2.35s/it]Testing astronomy:  84% 128/152 [05:13<00:51,  2.14s/it]Testing astronomy:  85% 129/152 [05:15<00:51,  2.25s/it]Testing astronomy:  86% 130/152 [05:18<00:55,  2.53s/it]Testing astronomy:  86% 131/152 [05:21<00:56,  2.67s/it]Testing astronomy:  87% 132/152 [05:24<00:52,  2.64s/it]Testing astronomy:  88% 133/152 [05:27<00:51,  2.69s/it]Testing astronomy:  88% 134/152 [05:28<00:43,  2.44s/it]Testing astronomy:  89% 135/152 [05:31<00:39,  2.33s/it]Testing astronomy:  89% 136/152 [05:33<00:38,  2.39s/it]Testing astronomy:  90% 137/152 [05:35<00:32,  2.20s/it]Testing astronomy:  91% 138/152 [05:37<00:29,  2.10s/it]Testing astronomy:  91% 139/152 [05:38<00:25,  1.95s/it]Testing astronomy:  92% 140/152 [05:40<00:23,  1.97s/it]Testing astronomy:  93% 141/152 [05:42<00:21,  1.94s/it]Testing astronomy:  93% 142/152 [05:45<00:22,  2.26s/it]Testing astronomy:  94% 143/152 [05:47<00:19,  2.18s/it]Testing astronomy:  95% 144/152 [05:50<00:17,  2.21s/it]Testing astronomy:  95% 145/152 [05:51<00:14,  2.09s/it]Testing astronomy:  96% 146/152 [05:53<00:12,  2.05s/it]Testing astronomy:  97% 147/152 [05:55<00:10,  2.10s/it]Testing astronomy:  97% 148/152 [05:58<00:08,  2.15s/it]Testing astronomy:  98% 149/152 [06:00<00:06,  2.11s/it]Testing astronomy:  99% 150/152 [06:02<00:04,  2.09s/it]Testing astronomy:  99% 151/152 [06:04<00:02,  2.01s/it]Testing astronomy: 100% 152/152 [06:05<00:00,  1.92s/it]Testing astronomy: 100% 152/152 [06:05<00:00,  2.41s/it]
+✓ Result: 75/152 correct = 49.34%
+
+Progress: 2/2 subjects
+
+======================================================================
+Evaluating subject: business_ethics
+======================================================================
+Testing business_ethics:   0% 0/100 [00:00<?, ?it/s]Testing business_ethics:   1% 1/100 [00:03<05:13,  3.16s/it]Testing business_ethics:   2% 2/100 [00:05<04:23,  2.69s/it]Testing business_ethics:   3% 3/100 [00:07<03:41,  2.29s/it]Testing business_ethics:   4% 4/100 [00:09<03:32,  2.22s/it]Testing business_ethics:   5% 5/100 [00:11<03:34,  2.26s/it]Testing business_ethics:   6% 6/100 [00:15<04:07,  2.63s/it]Testing business_ethics:   7% 7/100 [00:17<03:44,  2.41s/it]Testing business_ethics:   8% 8/100 [00:19<03:34,  2.33s/it]Testing business_ethics:   9% 9/100 [00:21<03:23,  2.23s/it]Testing business_ethics:  10% 10/100 [00:22<03:06,  2.07s/it]Testing business_ethics:  11% 11/100 [00:25<03:07,  2.11s/it]Testing business_ethics:  12% 12/100 [00:28<03:33,  2.42s/it]Testing business_ethics:  13% 13/100 [00:30<03:26,  2.38s/it]Testing business_ethics:  14% 14/100 [00:32<03:07,  2.18s/it]Testing business_ethics:  15% 15/100 [00:34<03:01,  2.14s/it]Testing business_ethics:  16% 16/100 [00:36<02:59,  2.13s/it]Testing business_ethics:  17% 17/100 [00:38<02:53,  2.08s/it]Testing business_ethics:  18% 18/100 [00:41<03:18,  2.42s/it]Testing business_ethics:  19% 19/100 [00:43<03:02,  2.25s/it]Testing business_ethics:  20% 20/100 [00:45<02:56,  2.21s/it]Testing business_ethics:  21% 21/100 [00:48<03:08,  2.39s/it]Testing business_ethics:  22% 22/100 [00:50<02:56,  2.27s/it]Testing business_ethics:  23% 23/100 [00:53<03:06,  2.42s/it]Testing business_ethics:  24% 24/100 [00:55<03:05,  2.44s/it]Testing business_ethics:  25% 25/100 [00:57<02:51,  2.29s/it]Testing business_ethics:  26% 26/100 [00:59<02:42,  2.19s/it]Testing business_ethics:  27% 27/100 [01:01<02:32,  2.09s/it]Testing business_ethics:  28% 28/100 [01:03<02:40,  2.23s/it]Testing business_ethics:  29% 29/100 [01:06<02:53,  2.44s/it]Testing business_ethics:  30% 30/100 [01:09<02:45,  2.36s/it]Testing business_ethics:  31% 31/100 [01:11<02:48,  2.44s/it]Testing business_ethics:  32% 32/100 [01:14<02:50,  2.51s/it]Testing business_ethics:  33% 33/100 [01:16<02:32,  2.28s/it]Testing business_ethics:  34% 34/100 [01:19<02:49,  2.56s/it]Testing business_ethics:  35% 35/100 [01:22<02:54,  2.68s/it]Testing business_ethics:  36% 36/100 [01:24<02:43,  2.56s/it]Testing business_ethics:  37% 37/100 [01:26<02:32,  2.42s/it]Testing business_ethics:  38% 38/100 [01:29<02:28,  2.40s/it]Testing business_ethics:  39% 39/100 [01:32<02:43,  2.67s/it]Testing business_ethics:  40% 40/100 [01:34<02:36,  2.60s/it]Testing business_ethics:  41% 41/100 [01:36<02:18,  2.35s/it]Testing business_ethics:  42% 42/100 [01:39<02:18,  2.39s/it]Testing business_ethics:  43% 43/100 [01:40<02:08,  2.25s/it]Testing business_ethics:  44% 44/100 [01:43<02:14,  2.41s/it]Testing business_ethics:  45% 45/100 [01:46<02:12,  2.41s/it]Testing business_ethics:  46% 46/100 [01:47<02:00,  2.24s/it]Testing business_ethics:  47% 47/100 [01:50<02:04,  2.34s/it]Testing business_ethics:  48% 48/100 [01:52<01:57,  2.27s/it]Testing business_ethics:  49% 49/100 [01:55<01:57,  2.30s/it]Testing business_ethics:  50% 50/100 [01:57<01:56,  2.33s/it]Testing business_ethics:  51% 51/100 [02:00<02:03,  2.51s/it]Testing business_ethics:  52% 52/100 [02:03<02:06,  2.64s/it]Testing business_ethics:  53% 53/100 [02:05<01:52,  2.39s/it]Testing business_ethics:  54% 54/100 [02:08<01:58,  2.58s/it]Testing business_ethics:  55% 55/100 [02:11<01:59,  2.66s/it]Testing business_ethics:  56% 56/100 [02:13<01:51,  2.53s/it]Testing business_ethics:  57% 57/100 [02:15<01:48,  2.53s/it]Testing business_ethics:  58% 58/100 [02:18<01:42,  2.44s/it]Testing business_ethics:  59% 59/100 [02:21<01:50,  2.69s/it]Testing business_ethics:  60% 60/100 [02:23<01:37,  2.44s/it]Testing business_ethics:  61% 61/100 [02:26<01:40,  2.57s/it]Testing business_ethics:  62% 62/100 [02:28<01:34,  2.49s/it]Testing business_ethics:  63% 63/100 [02:30<01:26,  2.35s/it]Testing business_ethics:  64% 64/100 [02:32<01:23,  2.33s/it]Testing business_ethics:  65% 65/100 [02:35<01:23,  2.38s/it]Testing business_ethics:  66% 66/100 [02:37<01:25,  2.53s/it]Testing business_ethics:  67% 67/100 [02:40<01:18,  2.37s/it]Testing business_ethics:  68% 68/100 [02:42<01:19,  2.47s/it]Testing business_ethics:  69% 69/100 [02:45<01:17,  2.49s/it]Testing business_ethics:  70% 70/100 [02:47<01:09,  2.31s/it]Testing business_ethics:  71% 71/100 [02:49<01:04,  2.23s/it]Testing business_ethics:  72% 72/100 [02:51<01:04,  2.30s/it]Testing business_ethics:  73% 73/100 [02:54<01:06,  2.45s/it]Testing business_ethics:  74% 74/100 [02:56<00:58,  2.27s/it]Testing business_ethics:  75% 75/100 [02:58<00:55,  2.21s/it]Testing business_ethics:  76% 76/100 [03:01<00:56,  2.34s/it]Testing business_ethics:  77% 77/100 [03:03<00:55,  2.41s/it]Testing business_ethics:  78% 78/100 [03:05<00:50,  2.29s/it]Testing business_ethics:  79% 79/100 [03:07<00:46,  2.21s/it]Testing business_ethics:  80% 80/100 [03:10<00:47,  2.36s/it]Testing business_ethics:  81% 81/100 [03:12<00:42,  2.26s/it]Testing business_ethics:  82% 82/100 [03:14<00:39,  2.21s/it]Testing business_ethics:  83% 83/100 [03:16<00:38,  2.28s/it]Testing business_ethics:  84% 84/100 [03:19<00:37,  2.32s/it]Testing business_ethics:  85% 85/100 [03:21<00:32,  2.18s/it]Testing business_ethics:  86% 86/100 [03:23<00:30,  2.20s/it]Testing business_ethics:  87% 87/100 [03:26<00:32,  2.47s/it]Testing business_ethics:  88% 88/100 [03:28<00:28,  2.41s/it]Testing business_ethics:  89% 89/100 [03:31<00:26,  2.41s/it]Testing business_ethics:  90% 90/100 [03:32<00:22,  2.21s/it]Testing business_ethics:  91% 91/100 [03:34<00:18,  2.05s/it]Testing business_ethics:  92% 92/100 [03:36<00:15,  1.98s/it]Testing business_ethics:  93% 93/100 [03:38<00:13,  1.93s/it]Testing business_ethics:  94% 94/100 [03:39<00:11,  1.87s/it]Testing business_ethics:  95% 95/100 [03:41<00:09,  1.92s/it]Testing business_ethics:  96% 96/100 [03:44<00:08,  2.19s/it]Testing business_ethics:  97% 97/100 [03:47<00:06,  2.29s/it]Testing business_ethics:  98% 98/100 [03:50<00:04,  2.48s/it]Testing business_ethics:  99% 99/100 [03:52<00:02,  2.52s/it]Testing business_ethics: 100% 100/100 [03:56<00:00,  2.72s/it]Testing business_ethics: 100% 100/100 [03:56<00:00,  2.36s/it]
+✓ Result: 45/100 correct = 45.00%
+
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: meta-llama/Llama-3.2-1B-Instruct
+None (full precision)
+Total Subjects: 2
+Total Questions: 252
+Total Correct: 120
+Overall Accuracy: 47.62%
+Duration: 10.1 minutes
+======================================================================
+
+✓ Results saved to: llama_3.2_1b_mmlu_results_full_20260201_033034.json
+
+📊 Top 5 Subjects:
+  1. astronomy: 49.34%
+  2. business_ethics: 45.00%
+
+📉 Bottom 5 Subjects:
+  1. astronomy: 49.34%
+  2. business_ethics: 45.00%
+
+======================================================================
+💾 To download results in Colab:
+======================================================================
+from google.colab import files
+files.download('llama_3.2_1b_mmlu_results_full_20260201_033034.json')
+
+✅ Evaluation complete!
+
+real	10m29.483s
+user	10m3.013s
+sys	0m5.293s
+
+Script done on 2026-02-01 03:30:36+00:00 [COMMAND_EXIT_CODE="0"]
