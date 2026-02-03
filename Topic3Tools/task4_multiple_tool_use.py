@@ -27,34 +27,79 @@ def get_weather(location: str) -> str:
     }
     return weather_data.get(location, f"Weather data not available for {location}")
 
+# @tool
+# def geo_calculator(expr: str = "", op: str = "", r: float = 0.0, a: float = 0.0, b: float = 0.0,
+#                   x1: float = 0.0, y1: float = 0.0, x2: float = 0.0, y2: float = 0.0) -> str:
+#     """
+#     Calculator for arithmetic + geometry. Returns JSON string.
+#     Provide either:
+#       - expr="19.5*(7+2)"
+#       - op="area_circle", r=3
+#       - op="hypotenuse", a=3, b=4
+#       - op="distance_2d", x1=0,y1=0,x2=3,y2=4
+#     """
+#     try:
+#         if expr:
+#             val = float(ne.evaluate(expr))
+#             return json.dumps({"ok": True, "mode": "expr", "expr": expr, "value": val})
+
+#         if op == "area_circle":
+#             return json.dumps({"ok": True, "op": op, "value": math.pi * float(r) * float(r)})
+
+#         if op == "hypotenuse":
+#             return json.dumps({"ok": True, "op": op, "value": math.hypot(float(a), float(b))})
+
+#         if op == "distance_2d":
+#             return json.dumps({"ok": True, "op": op, "value": math.hypot(float(x2-x1), float(y2-y1))})
+
+#         return json.dumps({"ok": False, "error": f"Unknown or missing op/expr (op={op})"})
+#     except Exception as e:
+#         return json.dumps({"ok": False, "error": str(e)})
+
+
 @tool
-def geo_calculator(expr: str = "", op: str = "", r: float = 0.0, a: float = 0.0, b: float = 0.0,
-                  x1: float = 0.0, y1: float = 0.0, x2: float = 0.0, y2: float = 0.0) -> str:
+def geo_calculator(payload: str) -> str:
     """
-    Calculator for arithmetic + geometry. Returns JSON string.
-    Provide either:
-      - expr="19.5*(7+2)"
-      - op="area_circle", r=3
-      - op="hypotenuse", a=3, b=4
-      - op="distance_2d", x1=0,y1=0,x2=3,y2=4
+    Evaluate an arithmetic / geometric expression.
+
+    Preferred input (JSON string):
+      {"expression": "sin(0.5) + 3*(4-1)"}
+
+    Fallback: if payload is not valid JSON, it is treated as the expression directly,
+    e.g. payload="sin(0.5)".
+
+    Supports + - * / // % **, parentheses, sin(), cos(), tan(), sqrt(), pi.
+
+    Returns:
+      {"ok": true, "expression": "...", "result": <number>}
+      or
+      {"ok": false, "error": "..."}
     """
     try:
-        if expr:
-            val = float(ne.evaluate(expr))
-            return json.dumps({"ok": True, "mode": "expr", "expr": expr, "value": val})
+        expr = None
 
-        if op == "area_circle":
-            return json.dumps({"ok": True, "op": op, "value": math.pi * float(r) * float(r)})
+        # Try JSON first (meets the requirement)
+        try:
+            params = json.loads(payload)
+            if isinstance(params, dict):
+                expr = params.get("expression")
+            elif isinstance(params, str):
+                # JSON could be a plain string like "sin(0.5)"
+                expr = params
+        except Exception:
+            # Not JSON -> treat as raw expression (robustness)
+            expr = payload
 
-        if op == "hypotenuse":
-            return json.dumps({"ok": True, "op": op, "value": math.hypot(float(a), float(b))})
+        if not expr or not isinstance(expr, str):
+            raise ValueError("Missing or invalid expression. Provide JSON {'expression': '...'} or a raw expression string.")
 
-        if op == "distance_2d":
-            return json.dumps({"ok": True, "op": op, "value": math.hypot(float(x2-x1), float(y2-y1))})
+        result = float(ne.evaluate(expr))
+        return json.dumps({"ok": True, "expression": expr, "result": result})
 
-        return json.dumps({"ok": False, "error": f"Unknown or missing op/expr (op={op})"})
     except Exception as e:
         return json.dumps({"ok": False, "error": str(e)})
+
+
 
 @tool
 def count_letter(text: str, letter: str) -> str:
