@@ -1,0 +1,40 @@
+Script started on 2026-02-05 01:58:22+00:00 [TERM="xterm-color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
+================================================================================
+LangGraph Manual Tool Calling - Persistent Multi-Turn Conversation
+================================================================================
+
+This system uses manual tool calling with ToolNode:
+  - call_model: Invokes LLM with tool bindings
+  - ToolNode: Executes requested tools in parallel
+  - Loop: tools -> call_model (until no more tools needed)
+  - Single persistent conversation across all turns
+  - History managed automatically (trimmed after 100 messages)
+
+Commands:
+  - Type 'quit' or 'exit' to end the conversation
+  - Type 'verbose' to enable detailed tracing
+  - Type 'quiet' to disable detailed tracing
+
+Available tools:
+  - get_weather(location): Get weather information
+  - get_population(city): Get population data
+  - calculate(expression): Evaluate math expressions
+================================================================================
+[SYSTEM] Conversation graph created successfully (using manual ToolNode)
+[SYSTEM] Graph visualization saved to 'langchain_manual_tool_graph.png'
+
+[SYSTEM] Starting conversation...
+
+
+================================================================================
+NODE: input_node
+================================================================================
+
+You: exit
+[DEBUG] Exit command received
+[DEBUG] Routing to END (exit requested)
+
+[SYSTEM] Conversation ended. Goodbye!
+
+
+Script done on 2026-02-05 01:58:38+00:00 [COMMAND_EXIT_CODE="0"]
