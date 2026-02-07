@@ -585,9 +585,8 @@ async def main():
 if __name__ == "__main__":
     import sys
     
-    # Check for --test-tool flag for Hour 1 isolated testing
+    # Check for --test-tool flag 
     if len(sys.argv) > 1 and sys.argv[1] == "--test-tool":
         test_tool_only()
     else:
-        # Hour 2: Full agent integration
         asyncio.run(main())
