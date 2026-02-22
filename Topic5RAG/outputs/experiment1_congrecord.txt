@@ -1,0 +1,438 @@
+
+==========================================================================================
+QUESTION: What did Mr. Flood have to say about Mayor David Black in Congress on January 13, 2026?
+
+WITHOUT RAG (model's own knowledge):
+----------------------------------------
+In a speech delivered by Mr. Flood on January 13, 2026, he stated that Mayor David Black was not an effective leader and had failed to deliver the promised improvements for the city's residents. He also mentioned that the mayor had been criticized for his handling of public safety issues and corruption allegations. The speaker concluded by calling for new leadership to take charge of the city. This statement reflects the negative perception of Mayor David Black among some members of Congress regarding their interaction with him during the previous session.
+
+----------------------------------------
+WITH RAG (using retrieved context):
+----------------------------------------
+============================================================
+RETRIEVED CONTEXT:
+============================================================
+[Source: CREC-2026-01-13.txt, Relevance: 0.612]
+vencido’’; ‘‘the people
+united shall never be defeated.’’
+Mr. Speaker, I thank and congratulate Juliet for all of her work.
+f
+
+RECOGNIZING MAYOR DAVID
+BLACK
+The SPEAKER pro tempore. The
+Chair now recognizes the gentleman
+from Nebraska, Mr. FLOOD, for 5 minutes.
+Mr. FLOOD. Mr. Speaker, I rise
+today to recognize Papillion, Nebraska’s, Mayor David Black, as a paragon
+of public service and remarkable stewardship.
+Through more than two decades of
+service to the people of Papillion,
+
+---
+
+[Source: CREC-2026-01-13.txt, Relevance: 0.600]
+y 13, 2026
+
+CONGRESSIONAL RECORD — HOUSE
+
+Mayor Black helped to guide the city
+into the thriving economic hub that it
+is today. This month, he announced
+that he will not seek reelection, which
+will conclude 171⁄2 years as mayor and
+nearly 5 additional years of serving the
+city in other roles.
+Mayor Black leaves behind a strong
+foundation built on partnership with
+an exceptional professional staff and
+the business community.
+Decades of engagement and community outreach have produced clear results, attracting
+
+---
+
+[Source: CREC-2026-01-20.txt, Relevance: 0.593]
+he talked about on the
+March on Washington had become a
+nightmare and was too far out of reach.
+Yet, on the night before he died, he
+told us that he had seen the Promised
+Land, that he wouldn’t get there with
+us, but he still believed in the power of
+community and the power of the beloved community.
+Today, the Congressional Black Caucus is carrying forward his work. We
+are his legacy.
+
+---
+
+[Source: CREC-2026-01-13.txt, Relevance: 0.575]
+re than
+earned the opportunity to spend additional time with his family once his
+final term in office concludes.
+Papillion, Mr. Speaker, is a special
+place, with Mayor Black’s legacy being
+built yet another example of that
+truth. I thank Mayor Black for his outstanding public service.
+BEN SASSE NEVER STOPS FIGHTING
+
+abonner on LAPGK3WLY3PROD with CONG-REC-ONLINE
+
+---
+
+[Source: CREC-2026-01-13.txt, Relevance: 0.562]
+s a paragon
+of public service and remarkable stewardship.
+Through more than two decades of
+service to the people of Papillion,
+
+E:\RECORD26\JANUARY\H13JA6.REC
+
+H13JA6
+
+January 13, 2026
+
+CONGRESSIONAL RECORD — HOUSE
+
+Mayor Black helped to guide the city
+into the thriving economic hub that it
+is today.
+============================================================
+
+Mr. Flood recognized Mayor David Black as a paragon of public service and remarkable stewardship. He highlighted Black's contributions over two decades of service to the people of Papillion, noting that through this period, the city became a thriving economic hub. Additionally, Flood mentioned that Black would not seek re-election after nearly 17½ years in office, concluding 17½ years as mayor and nearly 5 additional years of serving the city in other roles. The recognition also acknowledged Black's strong foundation built on partnerships with an exceptional professional staff and the business community, emphasizing his lasting impact on the city.
+==========================================================================================
+
+==========================================================================================
+QUESTION: What mistake Elise Stefanovic make in Congress on January 23, 2026?
+
+WITHOUT RAG (model's own knowledge):
+----------------------------------------
+On January 23, 2026, Elise Stefanovic made a significant political blunder by voting against the $1.7 trillion Infrastructure Investment and Jobs Act (IIJA) that was passed by the House of Representatives.
+This is a true story about how one person's vote can have a big impact on policy decisions. The IIJA was designed to invest in infrastructure projects across the country, including roads, bridges, public transportation systems, broadband internet access, and more. It also included provisions for job creation through these investments.
+Elise Stefanovic, who represents New York's 4th congressional district, voted against the bill because she believed it would not provide enough funding for her state's needs. She argued that the bill did not allocate enough money for critical infrastructure projects in New York, such as upgrading its airports and improving its highways.
+Her decision to vote against the bill caused controversy among Democrats and Republicans alike. Many criticized her for prioritizing her home state's interests over national priorities. Some even suggested that her vote could lead to a loss of Democratic support in future elections.
+In the end, the IIJA passed with bipartisan support after several amendments were added to address concerns raised by some members of both parties. However, the fact that Elise Stefanovic voted against the bill remains a point of contention within her party and has led to discussions about the importance of listening to constituents' concerns when making policy decisions. This incident highlights the potential consequences of individual votes in shaping legislation and demonstrates the complex nature of politics at all levels of government.
+
+----------------------------------------
+WITH RAG (using retrieved context):
+----------------------------------------
+============================================================
+RETRIEVED CONTEXT:
+============================================================
+[Source: CREC-2026-01-06.txt, Relevance: 0.529]
+tried to
+overturn our democracy. She ignored
+repeated lawful orders from Capitol Police. She pushed to the front of the
+crowd. She helped to smash a window
+into the Speaker’s Lobby and attempted to force her way through a
+barricaded door while she was armed
+
+E:\CR\FM\A06JA6.015
+
+S06JAPT1
+
+January 6, 2026
+
+---
+
+[Source: CREC-2026-01-08.txt, Relevance: 0.507]
+the
+more political the decisions become
+and the less informed. Let the people
+who have actually done the work write
+the bills. In this case, in these three
+and the three preceding bills, that is
+exactly what happened, and I couldn’t
+be more pleased with that result.
+I would be remiss not to build on a
+remark my friend, Ms. MCCOLLUM,
+made in her speech. I am very proud of
+
+January 8, 2026
+
+CONGRESSIONAL RECORD — HOUSE
+
+---
+
+[Source: CREC-2026-01-29.txt, Relevance: 0.502]
+at better opportunity will there be?
+
+VerDate Sep 11 2014
+
+04:41 Jan 30, 2026
+
+S369
+
+CONGRESSIONAL RECORD — SENATE
+
+Jkt 069060
+
+As written, the Homeland appropriations bill provides no real accountability, no oversight, no guardrails or
+transparency. It offers no guarantee at
+all that what happened to Alex Pretti
+won’t happen again.
+That is all the more absurd because
+Republicans gave the Department of
+Homeland Security an additional $190
+billion on top of the regular annual appropriations.
+
+---
+
+[Source: CREC-2026-01-14.txt, Relevance: 0.500]
+t problem. They have
+lost their way. They cannot be trusted.
+We should not give them another dime.
+Ms. LOIS FRANKEL of Florida. Mr.
+Chair, I yield 1 minute to the gentlewoman
+from
+Connecticut
+(Ms.
+DELAURO), the ranking member of the
+Appropriations Committee.
+Ms. DELAURO. Chairman, I oppose
+this amendment. The National Endow-
+
+VerDate Sep 11 2014
+
+January 14, 2026
+
+CONGRESSIONAL RECORD — HOUSE
+
+12:41 Jan 15, 2026
+
+Jkt 069060
+
+---
+
+[Source: CREC-2026-01-22.txt, Relevance: 0.495]
+assroom. Her faithfulness and kindness have left a lasting mark on
+
+PO 00000
+
+Frm 00006
+
+Fmt 0626
+
+Sfmt 9920
+
+January 22, 2026
+
+her church, her students, and the Saltillo community, and her legacy will continue to be felt
+for years to come.
+
+E:\CR\FM\A22JA8.020
+
+E22JAPT1
+
+Thursday, January 22, 2026
+
+Daily Digest
+Senate
+Chamber Action
+
+Committee Meetings
+
+The Senate met at 11:00:01 a.m. in pro forma session, and recessed at 11:00:16 a.m. until 3 p.m. on
+Monday, January 26, 2026.
+============================================================
+
+On January 23, 2026, Elise Stefanovic made a mistake by trying to overturn the democratic process and disregarding lawful orders from Capitol Police. Specifically, she pushed to the front of the crowd, smashed a window into the Speaker's Lobby, and attempted to forcibly enter a barricaded door while being armed. This behavior violated established protocols and undermined the integrity of the legislative body.
+==========================================================================================
+
+==========================================================================================
+QUESTION: What is the purpose of the Main Street Parity Act?
+
+WITHOUT RAG (model's own knowledge):
+----------------------------------------
+The purpose of the Main Street Parity Act is to provide a mechanism for small businesses to receive federal assistance during economic downturns. It was signed into law on December 18, 2017 by President Donald Trump.
+The Main Street Parity Act provides a way for small businesses to get help from the government when they are having trouble making ends meet because of an economic downturn. This act gives these businesses a chance to apply for financial support that can help them stay in business and keep their employees employed. The main goal is to make sure that smaller companies don't fall behind when big corporations have more resources available to them. By providing similar opportunities for all types of businesses, regardless of size or location, it aims to ensure fairness and equality in how the government supports struggling businesses across different regions. This legislation also includes provisions related to tax relief and other benefits aimed at helping small businesses weather tough times economically. Overall, its aim is to protect and promote job creation while ensuring that everyone has access to necessary resources during challenging periods.
+
+----------------------------------------
+WITH RAG (using retrieved context):
+----------------------------------------
+============================================================
+RETRIEVED CONTEXT:
+============================================================
+[Source: CREC-2026-01-20.txt, Relevance: 0.707]
+cted by the Senate and House of Representatives of the United States of America in
+Congress assembled,
+SECTION 1. SHORT TITLE.
+
+This Act may be cited as the ‘‘Main Street
+Parity Act’’.
+SEC. 2. MODIFICATION TO CRITERIA FOR LOANS
+FOR PLANT ACQUISITION, CONSTRUCTION, CONVERSION OR EXPANSION.
+(a) IN GENERAL.—Section 502(3)(C) of the
+
+---
+
+[Source: CREC-2026-01-20.txt, Relevance: 0.693]
+y requirement is the difference
+between jumping in headfirst and creating new economic opportunities for
+their communities and families or
+walking away entirely.
+This way of doing business just
+doesn’t reflect our current economic or
+technological realities. This bill offers
+a new opportunity for Americans
+across the country to step forward.
+The Main Street Parity Act is common sense.
+
+---
+
+[Source: CREC-2026-01-20.txt, Relevance: 0.679]
+his bill offers
+a new opportunity for Americans
+across the country to step forward.
+The Main Street Parity Act is common sense. It is a clear fix that brings
+these loans in line with the 504 standardization programs by setting an equity requirement at 10 percent.
+Madam Speaker, I encourage Members from both sides of the aisle to put
+small business owners and their employees first by supporting this bill.
+Mr. WILLIAMS of Texas. Madam
+Speaker, I am prepared to close, and I
+reserve the balance of my time.
+Ms.
+
+---
+
+[Source: CREC-2026-01-20.txt, Relevance: 0.573]
+of my time.
+Ms. VELÁZQUEZ. Madam Speaker, I
+yield myself such time as I may consume.
+Madam Speaker, I rise in support of
+H.R. 5763, the Main Street Parity Act.
+One of the key functions of the SBA
+is to ensure that small businesses in
+communities across the country have
+access to the capital they need to grow
+and scale their operations.
+The SBA has long served this need
+through its loan guarantee program,
+including the 504/CDC program.
+
+---
+
+[Source: CREC-2026-01-20.txt, Relevance: 0.565]
+for his collaboration on this bill.
+Madam Speaker, I am extremely
+proud to lead the Main Street Parity
+Act with Chair WILLIAMS. As members
+of the Small Business Committee, one
+of the most bipartisan committees in
+the 119th Congress, we hear the same
+messages repeated every single day:
+Small businesses don’t need special
+treatment.
+============================================================
+
+The purpose of the Main Street Parity Act is to modify the criteria for loans for plant acquisition, construction, conversion, or expansion, ensuring that these loans align with the standards set by the 504 standardization programs by establishing an equity requirement of 10%. This act aims to provide a fair and equitable opportunity for small businesses across the country to access capital needed for growth and expansion without being disadvantaged compared to larger corporations. Additionally, it seeks to address concerns about the lack of parity between smaller and larger businesses in terms of financial assistance available to them.
+==========================================================================================
+
+==========================================================================================
+QUESTION: Who in Congress has spoken for and against funding of pregnancy centers?
+
+WITHOUT RAG (model's own knowledge):
+----------------------------------------
+The U.S. House of Representatives has had mixed support for funding of abortion clinics, with some members supporting the funding while others oppose it.
+The U.S. Senate has also been divided on the issue, with some senators supporting funding for abortion clinics while others oppose it.
+In 2013, a bill was introduced in the U.S. House that would have provided $5 million to fund abortion clinics. However, the bill did not pass.
+In 2014, a similar bill was introduced in the U.S. Senate, but it also failed to pass.
+As of now, there is no clear consensus among members of Congress regarding funding of abortion clinics or other forms of reproductive health care services. The issue remains contentious and continues to be debated by lawmakers at both the federal and state levels.
+
+----------------------------------------
+WITH RAG (using retrieved context):
+----------------------------------------
+============================================================
+RETRIEVED CONTEXT:
+============================================================
+[Source: CREC-2026-01-21.txt, Relevance: 0.745]
+der the Biden administration,
+there were efforts to block States from
+partnering with pregnancy centers.
+This bill pushes back. It protects a
+State’s ability to work with trusted
+local organizations, centers that offer
+prenatal care, parenting classes, counseling, and everyday necessities like
+diapers, formula, and baby clothes.
+I have visited centers like this in my
+own district and seen the compassion
+that they offer firsthand.
+
+---
+
+[Source: CREC-2026-01-21.txt, Relevance: 0.730]
+s, when it
+comes to women’s health, accountability isn’t
+required.
+This bill defines pregnancy centers as organizations that support ‘‘protecting the life of the
+mother and the unborn child,’’ but Republican’s commitment to funneling taxpayer dollars to medical grifters endangers both.
+I urge my colleagues to vote No on this irresponsible bill.
+The SPEAKER pro tempore.
+
+---
+
+[Source: CREC-2026-01-21.txt, Relevance: 0.714]
+.
+f
+
+FUNDING CRISIS PREGNANCY
+CENTERS
+(Ms. DEXTER of Oregon was recognized to address the House for 5 minutes.)
+Ms. DEXTER. Mr. Speaker, I rise
+today in strong opposition to the proposal Republicans voted on to take
+money from families in need and divert
+it to anti-abortion crisis pregnancy
+centers.
+As a medical doctor, I want to be
+crystal clear. Crisis pregnancy centers
+are not medical facilities.
+
+---
+
+[Source: CREC-2026-01-21.txt, Relevance: 0.706]
+ancy Centers.’’ https://schneider.
+house.gov/sites/evo-subsites/schneider
+.house.gov/files/evo-media-document/
+truth-and-transparency-in-crisis-preg
+nancy-centers-rep-schneider.pdf.
+Mr. SCHNEIDER. Mr. Speaker, I
+think it is shameful that my Republican colleagues have brought this bill
+to the floor to funnel money to socalled crisis pregnancy centers and
+away from programs that truly help
+families in need.
+My Republican colleagues are saying
+that these centers help women.
+
+---
+
+[Source: CREC-2026-01-22.txt, Relevance: 0.703]
+nt these pregnancy care centers are.
+
+VerDate Sep 11 2014
+
+07:26 Jan 23, 2026
+
+H1339
+
+CONGRESSIONAL RECORD — HOUSE
+
+Jkt 069060
+
+I have been working with them for
+over 50 years. Louise Summerhill from
+Canada started the first group of them
+called Birthright. They were there to
+say: Look, we love you. We will help
+you. All of the centers that are now in
+existence do an amazing job. They are
+global. Again, there are 2,700 of these
+tremendous centers in our country.
+============================================================
+
+According to the given context, two people have spoken about funding of pregnancy centers:
+
+1. Representative Debbie Dingell (D-Michigan) spoke in favor of funding crisis pregnancy centers by stating that she has visited such centers in her own district and sees the compassion offered there.
+
+2. Representative John Hickenlooper (D-Colo.) spoke against funding crisis pregnancy centers, calling them "anti-abortion" and arguing that they should receive less funding than other programs that help families in need. He also mentioned a document titled "Truth and Transparency in Crisis Pregnancy Centers," which he referenced to highlight his position against funding these centers. 
+
+These two representatives represent opposing views on whether or not to fund crisis pregnancy centers. The context does not provide any additional details about who else may have spoken on this topic.
+==========================================================================================
