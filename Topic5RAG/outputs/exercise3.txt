@@ -1,0 +1,207 @@
+Love this — very Model T–coded questions 🛠️🚗 Let’s go step-by-step for a Ford Model T.
+
+1️⃣ Adjusting the Carburetor (Holley or Kingston)
+4
+
+Most Model Ts have either a Holley NH or Kingston L-4 carburetor.
+
+🔧 Basic Adjustment Procedure
+
+Warm up the engine fully
+
+Locate the main needle adjustment screw
+
+Turn the needle clockwise gently until it seats
+
+Do NOT force it
+
+Back it out:
+
+Holley: ~¾ to 1 turn
+
+Kingston: ~1 to 1¼ turns
+
+Then:
+
+Start engine
+
+Adjust in small increments (⅛ turn at a time)
+
+You want:
+
+Smooth idle
+
+No sputtering
+
+No black smoke (too rich)
+
+No popping through intake (too lean)
+
+💡 Model Ts run best slightly rich rather than lean.
+
+2️⃣ Correct Spark Plug Gap
+
+For a Model T:
+
+✅ 0.025 inches (25 thousandths)
+
+You can go slightly wider (0.028") if running a strong coil setup, but factory spec is:
+
+0.025"
+
+Common plugs used:
+
+Champion W16Y (modern equivalent)
+
+Autolite 216
+
+3️⃣ Fixing a Slipping Transmission Band
+4
+
+The Model T uses a planetary transmission with 3 bands:
+
+Low
+
+Reverse
+
+Brake
+
+Slipping usually means:
+
+Band too loose
+
+Worn lining
+
+Oil contamination
+
+🔧 Adjustment Steps
+
+Remove floorboards
+
+Remove transmission cover
+
+Locate band adjustment screws (3 square-head studs with lock nuts)
+
+To tighten:
+
+Loosen lock nut
+
+Turn adjusting screw clockwise ¼ turn
+
+Retighten lock nut
+
+Test drive
+
+⚠️ Do NOT overtighten — too tight causes dragging and overheating.
+
+If adjustment doesn’t fix it:
+
+Bands may need re-lining
+
+Check for oil contamination
+
+4️⃣ What Oil to Use
+
+Originally, Model T called for straight mineral oil.
+
+Modern Recommendation:
+
+✅ SAE 30 non-detergent oil
+
+In warmer climates:
+
+SAE 30 is perfect
+
+In cold weather:
+
+SAE 20 (for easier starting)
+
+⚠️ Important:
+
+Do NOT use modern high-detergent oil in an unrebuilt engine
+
+Model T has no oil filter
+
+Detergent oil can loosen sludge and cause problems
+
+Capacity:
+
+~3½ quarts
+
+Quick Reference Summary
+Item	Specification
+Spark Plug Gap	0.025"
+Oil	SAE 30 Non-Detergent
+Carb Needle	~1 turn out (adjust fine)
+Transmission Bands	Adjust ¼ turn at a time
+
+If you want, tell me:
+
+What year Model T?
+
+Touring? Roadster? Truck?
+
+Holley or Kingston carb?
+
+I can give more specific tuning guidance.
+
+
+
+
+
+
+
+Here’s what can be found about the recent congressional matters you asked about (with citations to confirm claims):
+
+🗣️ 1. What Mike Flood said about Mayor David Black on the House floor on January 13 , 2026
+
+On January 16, 2026, Rep. Flood delivered remarks on the House floor recognizing David Black, long-time mayor of Papillion, Nebraska, who announced he will not seek re-election after more than 17 years of service. Flood praised Black’s career of public service, saying:
+
+Black “leaves behind a strong foundation built on partnership with an exceptional professional staff and the business community.”
+
+He credited Black with decades of community engagement that drew new businesses — including large firms — to Papillion.
+
+Flood said Mayor Black will be “deeply missed by the people of Papillion” and expressed hope he will continue in public service in the future.
+
+(This was presented during the House’s Morning Hour but is widely reported from Flood’s office and local media coverage of his remarks.)
+
+❓ 2. What mistake Elise Stefanik made in Congress on January 23 , 2026
+
+I could not find any credible record or news report about an incident or “mistake” by Rep. Elise Stefanik in Congress on January 23, 2026. Searches of congressional records and major reporting around that date show no widely reported procedural error, misspeaking incident, or official parliamentary mistake tied to her on that date.
+
+If you have a specific story or quote in mind, you might need to give a bit more context or detail — from current news sources there’s no record of any such event on that day.
+
+📜 3. What is the Main Street Parity Act
+
+There is no widely referenced federal bill officially called the Main Street Parity Act in the January 2026 congressional session based on major legislative tracking sources. However, there is closely related action around protecting pregnancy resource centers under federal funding law, for example:
+
+H.R. 6945 — The Supporting Pregnant and Parenting Women and Families Act was passed by the House in late January 2026. It ensures that states can continue to use Temporary Assistance for Needy Families (TANF) funds for pregnancy resource centers and prevents federal regulators from blocking such use of federal block grants. Supporters describe its purpose as protecting and expanding access to pregnancy-related resources via state use of federal TANF dollars.
+
+If the Main Street Parity Act refers to another recent or newly introduced bill, it may not yet be widely reported or searchable. Let me know if you want to check a particular Congress session or bill number.
+
+🤰 4. Who in Congress has spoken for and against funding of pregnancy centers
+Spoken for pregnancy center funding
+
+Members of Congress who publicly supported H.R. 6945 (or similar measures to affirm funding eligibility for pregnancy resource centers) include:
+
+Michelle Fischbach — introduced H.R. 6945 and spoke in favor of protecting TANF funding eligibility for pregnancy centers.
+
+Claudia Tenney — has been involved in previous efforts to protect pregnancy resource center funding via anti-discrimination legislation.
+
+Chris Smith — has co-sponsored pregnancy-center support bills and spoken for their role in caring for pregnant women.
+
+Lori Chavez‑DeRemer (not in the 2026 press on H.R. 6945 but known as a backer in prior discussions).
+
+Cliff Bentz — publicly voted yes on H.R. 6945 and described the pregnancy center funding protections as important.
+
+Spoken against funding or criticized pregnancy resource center support
+
+There’s no widely reported floor speech or widely cited opposition within the 119th Congress that specifically targets TANF eligibility for pregnancy centers by name — but opposition typically comes from members who argue:
+
+Federal block grants like TANF should prioritize low-income families and basic economic support rather than being directed to pregnancy centers.
+
+Some advocacy groups and pro-choice lawmakers have publicly opposed expanding or protecting funding for crisis pregnancy centers because they believe such centers sometimes provide misleading information and divert public resources away from comprehensive reproductive health care. Critics emphasize that CPCs are separate from medical clinics and do not offer abortion services.
+
+Prominent lawmakers associated with opposition to pregnancy-center funding in the abstract are often leading Democrats on health and human services or reproductive rights issues, though there is no specific one publicly quoted on H.R. 6945 in major coverage as of January 2026.
+
+If you want, I can pull actual congressional debate transcripts or roll-call votes on specific bills like H.R. 6945 or others related to the Main Street Parity Act. Just let me know!
