@@ -1,0 +1,167 @@
+
+==========================================================================================
+QUESTION: How do I adjust the carburetor on a Model T?
+
+GPT-4o Mini (NO RAG)
+----------------------------------------
+Adjusting the carburetor on a Model T Ford involves several steps to ensure proper fuel-air mixture and engine performance. Here’s a general guide to help you with the adjustment:
+
+### Tools Needed:
+- Screwdriver
+- Wrench (if necessary)
+- Tachometer (optional, for fine-tuning)
+
+### Steps to Adjust the Carburetor:
+
+1. **Warm Up the Engine**: Start the engine and let it warm up to operating temperature. This ensures that the adjustments you make are accurate.
+
+2. **Locate the Carburetor**: The Model T typically has a simple carburetor mounted on the side of the engine. Familiarize yourself with its components, including the mixture adjustment screw and the throttle.
+
+3. **Adjust the Mixture**:
+   - **Idle Mixture**: Locate the mixture adjustment screw, usually found on the side of the carburetor. 
+   - **Initial Setting**: Turn the screw clockwise until it lightly seats, then back it out about 1.5 to 2 turns as a starting point.
+   - **Fine-Tuning**: Start the engine and let it idle. Gradually turn the mixture screw in (clockwise) until the engine begins to run rough, then back it out (counterclockwise) until it runs smoothly again. This is the optimal mixture setting.
+
+4. **Adjust the Throttle**:
+   - The throttle lever controls the engine speed. Make sure it is set to a comfortable idle speed, typically around 400-600 RPM.
+   - If the engine stalls or runs too fast, adjust the throttle lever accordingly.
+
+5. **Check for Smooth Operation**: After making adjustments, rev the engine slightly to ensure it responds well without hesitation or stalling. 
+
+6. **Test Drive**: Take the Model T for a short drive to see how it performs under load. Pay attention to acceleration and overall engine response.
+
+7. **Recheck Adjustments**: After the test drive, you may need to make further adjustments to the mixture or throttle settings based on performance.
+
+### Additional Tips:
+- **Fuel Quality**: Ensure you are using good quality fuel, as poor fuel can affect performance.
+- **Regular Maintenance**: Keep the carburetor clean and check for any leaks or blockages.
+- **Consult the Manual**: If you have access to a Model T service manual, refer to it for specific settings and adjustments.
+
+### Safety Precautions:
+- Always work in a well-ventilated area when dealing with fuel systems.
+- Be cautious of hot engine parts and moving components.
+
+By following these steps, you should be able to adjust the carburetor on your Model T for optimal performance. If you encounter persistent issues, consider consulting a professional or a Model T expert.
+==========================================================================================
+
+==========================================================================================
+QUESTION: What is the correct spark plug gap for a Model T Ford?
+
+GPT-4o Mini (NO RAG)
+----------------------------------------
+The correct spark plug gap for a Model T Ford is typically around 0.025 inches (0.635 mm). However, it's always a good idea to check the specific recommendations for your particular engine, as there may be slight variations based on the year and any modifications that have been made.
+==========================================================================================
+
+==========================================================================================
+QUESTION: How do I fix a slipping transmission band?
+
+GPT-4o Mini (NO RAG)
+----------------------------------------
+Fixing a slipping transmission band can be a complex task, as it often involves disassembling parts of the transmission. Here are some general steps you can take to address the issue, but keep in mind that if you're not experienced with automotive repairs, it may be best to consult a professional mechanic.
+
+### Steps to Fix a Slipping Transmission Band:
+
+1. **Diagnose the Problem:**
+   - Ensure that the slipping is indeed due to the transmission band. Other issues, such as low fluid levels, dirty fluid, or a failing torque converter, can also cause slipping.
+
+2. **Check Transmission Fluid:**
+   - Check the transmission fluid level and condition. Low or dirty fluid can cause slipping. If the fluid is low, top it off with the correct type of transmission fluid. If it’s dirty, consider a fluid change.
+
+3. **Adjust the Band:**
+   - Some transmissions have adjustable bands. If your transmission allows for this, you can adjust the band tension. This usually involves:
+     - Locating the band adjustment screw (refer to your vehicle’s service manual for specifics).
+     - Loosening the lock nut and turning the adjustment screw to the specified torque.
+     - Re-tightening the lock nut.
+
+4. **Inspect for Damage:**
+   - If adjusting the band doesn’t resolve the issue, you may need to inspect the band and related components for wear or damage. This may require removing the transmission pan and inspecting the band and drum.
+
+5. **Replace the Band:**
+   - If the band is worn or damaged, it will need to be replaced. This typically involves:
+     - Draining the transmission fluid.
+     - Removing the transmission pan and filter.
+     - Accessing the band and replacing it with a new one.
+     - Reassembling everything and refilling with fluid.
+
+6. **Check Other Components:**
+   - While you have the transmission apart, check other components such as clutches, seals, and the valve body for wear or damage.
+
+7. **Reassemble and Test:**
+   - After making the necessary repairs or adjustments, reassemble the transmission, refill it with fluid, and test drive the vehicle to ensure the slipping has been resolved.
+
+### Important Considerations:
+- **Consult the Manual:** Always refer to your vehicle’s service manual for specific instructions and specifications.
+- **Safety First:** Ensure the vehicle is securely lifted and supported if you are working underneath it.
+- **Professional Help:** If you are unsure about any step or if the problem persists, it’s advisable to seek help from a qualified mechanic.
+
+### Note:
+Transmission repairs can be intricate and may require specialized tools. If you are not comfortable performing these repairs, it is best to take your vehicle to a professional transmission specialist.
+==========================================================================================
+
+==========================================================================================
+QUESTION: What oil should I use in a Model T engine?
+
+GPT-4o Mini (NO RAG)
+----------------------------------------
+For a Model T engine, it is generally recommended to use a non-detergent oil with a viscosity of 30 weight. Many enthusiasts suggest using a straight mineral oil or a specific oil designed for vintage engines. Some modern options include:
+
+1. **Non-Detergent Motor Oil**: Look for a 30-weight non-detergent oil, which is suitable for the Model T's design and helps prevent sludge buildup.
+
+2. **Classic Car Oil**: There are oils specifically formulated for classic cars that may contain additives to protect older engines.
+
+3. **SAE 30 or SAE 40 Oil**: Depending on the climate and operating conditions, you might choose SAE 30 for warmer temperatures or SAE 40 for hotter conditions.
+
+Always check the owner's manual or consult with a Model T expert for specific recommendations based on your engine's condition and usage.
+==========================================================================================
+
+==========================================================================================
+QUESTION: What did Mr. Flood have to say about Mayor David Black in Congress on January 13, 2026?
+
+GPT-4o Mini (NO RAG)
+----------------------------------------
+I'm sorry, but I don't have access to real-time information or events that occurred after my last training cut-off in October 2023. Therefore, I cannot provide details about Mr. Flood's comments regarding Mayor David Black in Congress on January 13, 2026. You may want to check news sources or official congressional records for the most accurate and up-to-date information.
+==========================================================================================
+
+==========================================================================================
+QUESTION: What mistake Elise Stefanovic make in Congress on January 23, 2026?
+
+GPT-4o Mini (NO RAG)
+----------------------------------------
+I'm sorry, but I don't have any information about events or actions taken by Elise Stefanik in Congress on January 23, 2026, as my training only includes data up until October 2021. For the most accurate and up-to-date information, I recommend checking reliable news sources or official congressional records.
+==========================================================================================
+
+==========================================================================================
+QUESTION: What is the purpose of the Main Street Parity Act?
+
+GPT-4o Mini (NO RAG)
+----------------------------------------
+The Main Street Parity Act is legislation aimed at addressing the regulatory disparities between community banks and larger financial institutions, particularly in the context of the financial services industry. Its primary purpose is to ensure that community banks and credit unions can compete on a more level playing field with larger banks, especially regarding the regulatory burdens they face.
+
+Key objectives of the Main Street Parity Act include:
+
+1. **Reducing Regulatory Burdens**: The act seeks to alleviate some of the regulatory requirements that disproportionately affect smaller financial institutions, allowing them to operate more efficiently and effectively.
+
+2. **Promoting Fair Competition**: By leveling the regulatory playing field, the act aims to enhance competition in the banking sector, which can lead to better services and products for consumers.
+
+3. **Supporting Local Economies**: By strengthening community banks, the act supports local lending and investment, which can contribute to the economic development of local communities.
+
+4. **Encouraging Innovation**: With reduced regulatory pressures, community banks may have more resources and flexibility to innovate and offer new financial products and services.
+
+Overall, the Main Street Parity Act is designed to foster a more equitable financial environment that benefits both consumers and smaller financial institutions.
+==========================================================================================
+
+==========================================================================================
+QUESTION: Who in Congress has spoken for and against funding of pregnancy centers?
+
+GPT-4o Mini (NO RAG)
+----------------------------------------
+As of my last update in October 2023, discussions around funding for pregnancy centers, particularly crisis pregnancy centers (CPCs), have been a topic of debate in Congress, especially in the context of reproductive rights and access to abortion services.
+
+**Supporters of Funding:**
+- Many Republican lawmakers have expressed support for funding pregnancy centers, arguing that they provide essential services to women facing unplanned pregnancies. They often highlight the centers' roles in offering counseling, parenting classes, and material support like baby supplies.
+
+**Opponents of Funding:**
+- Conversely, many Democratic lawmakers and reproductive rights advocates have opposed funding for these centers. They argue that some crisis pregnancy centers provide misleading information about abortion and reproductive health, and they advocate for funding to be directed toward comprehensive reproductive health services, including access to abortion.
+
+Specific names of Congress members who have taken a stance on this issue can vary over time and may include prominent figures in the ongoing debates about reproductive rights. For the most current and detailed information, it would be best to refer to recent congressional records, press releases, or news articles that cover the latest discussions and votes related to this topic.
+==========================================================================================
