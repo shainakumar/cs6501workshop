@@ -1,0 +1,148 @@
+
+==========================================================================================
+QUERY: What is the correct spark plug gap specification for a Model T Ford?
+==========================================================================================
+
+#1  score=0.542  source=ModelTNew.pdf
+lacing a screw driver on the terminal and resting it  against the radiator stay rod (See Fig. 503). (The commutator ter- 237    [Page 256] 238  FORD SERVICE  Fig. 503  minals on the coil box are the four upper terminals and for conven- ience are numb...
+
+#2  score=0.536  source=ModelTNew.txt
+0" higher clearance                     Fig. 210                          Fig. 2ll 86                            FORD SERVICE       t:1an the upper half. Shims (See Fig. 210) are furnished in various      thicknesses so that extremely close adjustme...
+
+#3  score=0.510  source=ModelTNew.txt
+. . . . . . . . . . . . . . . . . . . . . . . . . . . 149               installing and removing .... . .. . ....... . ........ 66- 60 Fuel system, tracing trouble in ....... . .. . .. . .. . ... . . . . . . .... 1014                                  ...
+
+#4  score=0.500  source=ModelTNew.txt
+iddle ring, and .004" to .006" for bottom ring. 427  If the gap is too small, the ends of the ring can be filed (See Fig.   252), until the correct gap is obtained. When filing ends of rings,   care should be taken that ring is not distorted as it is...
+
+#5  score=0.496  source=ModelTNew.pdf
+he magneto coil support, the lower  half of the support is fitted with a .006" to .010" higher clearance  Fig. 210  Fig. 2ll    [Page 104] 86  FORD SERVICE  t:1an the upper half. Shims (See Fig. 210) are furnished in various  thicknesses so that extr...
+
+==========================================================================================
+QUERY: How far apart should the Model T spark plug be?
+==========================================================================================
+
+#1  score=0.525  source=ModelTNew.pdf
+ap between the points  should measure approximately ~2"· Also examine the porcelain to  make sure that it has not been cracked.  1003 If no spark occurs when the above test is made, again hold the  spark plug wire approximately Ys" away from the engi...
+
+#2  score=0.480  source=ModelTNew.pdf
+rs between spark plug wire and cylinder head  when commutator terminal ·is shorted to radiator stay rod, as de- scribed in Par. 1003, the trouble lies either in the coil unit of the cylin- der which is missing or in the coil box and can be remedied b...
+
+#3  score=0.478  source=ModelTNew.pdf
+g in the missing cylinder, then start the engine and hold this  wire approximately Ys" away from any part of the cylinder head. If  a spark occurs the trouble lies in the plug and can be overcome by  cleaning, or if necessary, replacing the plug.  Be...
+
+#4  score=0.451  source=ModelTNew.txt
+in the missing cylinder, then start the engine and hold this   wire approximately Ys" away from any part of the cylinder head. If   a spark occurs the trouble lies in the plug and can be overcome by   cleaning, or if necessary, repla cing the plug. B...
+
+#5  score=0.447  source=ModelTNew.txt
+. . . . . . . . . . . . . . . . . . . . . . . . . . . 149               installing and removing .... . .. . ....... . ........ 66- 60 Fuel system, tracing trouble in ....... . .. . .. . .. . ... . . . . . . .... 1014                                  ...
+
+==========================================================================================
+QUERY: Model T spark plug gap
+==========================================================================================
+
+#1  score=0.586  source=ModelTNew.pdf
+g in the missing cylinder, then start the engine and hold this  wire approximately Ys" away from any part of the cylinder head. If  a spark occurs the trouble lies in the plug and can be overcome by  cleaning, or if necessary, replacing the plug.  Be...
+
+#2  score=0.562  source=ModelTNew.txt
+in the missing cylinder, then start the engine and hold this   wire approximately Ys" away from any part of the cylinder head. If   a spark occurs the trouble lies in the plug and can be overcome by   cleaning, or if necessary, repla cing the plug. B...
+
+#3  score=0.532  source=ModelTNew.pdf
+rs between spark plug wire and cylinder head  when commutator terminal ·is shorted to radiator stay rod, as de- scribed in Par. 1003, the trouble lies either in the coil unit of the cylin- der which is missing or in the coil box and can be remedied b...
+
+#4  score=0.505  source=ModelTNew.pdf
+e sound of the  exhaust from the engine. When this plug is found, the trouble lies  in the ignition or valves of that cylinder. (As the miss is more likely  to be due to ignition than valve trouble it is advisable to check the  ignition first.)  1002...
+
+#5  score=0.500  source=ModelTNew.txt
+. . . . . . . . . . . . . . . . . . . . . . . . . . . 149               installing and removing .... . .. . ....... . ........ 66- 60 Fuel system, tracing trouble in ....... . .. . .. . .. . ... . . . . . . .... 1014                                  ...
+
+==========================================================================================
+QUERY: What gap do I set the spark plugs to?
+==========================================================================================
+
+#1  score=0.590  source=ModelTNew.pdf
+g in the missing cylinder, then start the engine and hold this  wire approximately Ys" away from any part of the cylinder head. If  a spark occurs the trouble lies in the plug and can be overcome by  cleaning, or if necessary, replacing the plug.  Be...
+
+#2  score=0.561  source=ModelTNew.txt
+. . . . . . . . . . . . . . . . . . . . . . . . . . . 149               installing and removing .... . .. . ....... . ........ 66- 60 Fuel system, tracing trouble in ....... . .. . .. . .. . ... . . . . . . .... 1014                                  ...
+
+#3  score=0.539  source=ModelTNew.pdf
+d removing .... . .. . ....... . ........ 66- 60  Fuel system, tracing trouble in ....... . .. . .. . .. . ... . . . . . . .... 1014  G  Gap, between magnet clamps and coil core. . . . . . . . . . . . . . . . . . .  319  piston ring . . . . . . . . ....
+
+#4  score=0.531  source=ModelTNew.txt
+, place ring in   cylinder and raise piston until ring fits evenly. The two top rings are   checked at the top of the cylinder. In a car that has been in service   for some time, it is advisable to check the bottom ring at the bottom   of the cylinde...
+
+#5  score=0.530  source=ModelTNew.txt
+n down but not        tightened until hood is installed. 129 Install carburetor priming rod by inserting end of carburetor   priming rod (See "A" Fig. 18), through radiator shell and connect   it to carburetor butterfl y " B " b y bending end of wire...
+
+==========================================================================================
+QUERY: Ignition system spark plug spacing requirement
+==========================================================================================
+
+#1  score=0.516  source=ModelTNew.txt
+. . . . . . . . . . . . . . . . . . . . . . . . . . . 149               installing and removing .... . .. . ....... . ........ 66- 60 Fuel system, tracing trouble in ....... . .. . .. . .. . ... . . . . . . .... 1014                                  ...
+
+#2  score=0.453  source=ModelTNew.txt
+the coil box are the four upper terminals and for conven -   ience are numbered 1, 2, 3 and 4 to correspond with the cylinders. )   If a spark occurs between spark plug wire and cylinder the trouble   lies in the commutator or commutator loom and can...
+
+#3  score=0.451  source=ModelTNew.pdf
+d removing .... . .. . ....... . ........ 66- 60  Fuel system, tracing trouble in ....... . .. . .. . .. . ... . . . . . . .... 1014  G  Gap, between magnet clamps and coil core. . . . . . . . . . . . . . . . . . .  319  piston ring . . . . . . . . ....
+
+#4  score=0.450  source=ModelTNew.txt
+... 1104 Spark plugs, adjp.stment of. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1002 Spark timing . . . . . . . . . . . . . . . . . . . . .. . . . . . . . . . . . . . . . . . . . . . . . . 126 Spring, bendix, replacement of . . ...
+
+#5  score=0.447  source=ModelTNew.pdf
+g in the missing cylinder, then start the engine and hold this  wire approximately Ys" away from any part of the cylinder head. If  a spark occurs the trouble lies in the plug and can be overcome by  cleaning, or if necessary, replacing the plug.  Be...
+
+==========================================================================================
+QUERY: Spark plug gap in thousandths of an inch for a Model T
+==========================================================================================
+
+#1  score=0.593  source=ModelTNew.pdf
+g in the missing cylinder, then start the engine and hold this  wire approximately Ys" away from any part of the cylinder head. If  a spark occurs the trouble lies in the plug and can be overcome by  cleaning, or if necessary, replacing the plug.  Be...
+
+#2  score=0.563  source=ModelTNew.pdf
+ap between the points  should measure approximately ~2"· Also examine the porcelain to  make sure that it has not been cracked.  1003 If no spark occurs when the above test is made, again hold the  spark plug wire approximately Ys" away from the engi...
+
+#3  score=0.561  source=ModelTNew.txt
+in the missing cylinder, then start the engine and hold this   wire approximately Ys" away from any part of the cylinder head. If   a spark occurs the trouble lies in the plug and can be overcome by   cleaning, or if necessary, repla cing the plug. B...
+
+#4  score=0.504  source=ModelTNew.pdf
+rs between spark plug wire and cylinder head  when commutator terminal ·is shorted to radiator stay rod, as de- scribed in Par. 1003, the trouble lies either in the coil unit of the cylin- der which is missing or in the coil box and can be remedied b...
+
+#5  score=0.502  source=ModelTNew.pdf
+time, it is advisable to check the bottom ring at the bottom  of the cylinder, as the cylinders sometimes wear slightly taper.  The ring gap clearance is .008" to .012" for the top ring, .006" to  .008" for middle ring, and .004" to .006" for bottom ...
+
+
+==========================================================================================
+OVERLAP (count of shared chunks in top-5)
+==========================================================================================
+      Formal vs Casual        overlap=1/5
+      Formal vs Keywords      overlap=1/5
+      Formal vs Question form  overlap=1/5
+      Formal vs Indirect      overlap=1/5
+      Formal vs More specific  overlap=0/5
+      Casual vs Keywords      overlap=4/5
+      Casual vs Question form  overlap=2/5
+      Casual vs Indirect      overlap=2/5
+      Casual vs More specific  overlap=4/5
+    Keywords vs Question form  overlap=2/5
+    Keywords vs Indirect      overlap=2/5
+    Keywords vs More specific  overlap=3/5
+Question form vs Indirect      overlap=3/5
+Question form vs More specific  overlap=1/5
+    Indirect vs More specific  overlap=1/5
+
+
+
+==========================================================================================
+SCORE SUMMARY
+==========================================================================================
+      Formal: max=0.542  mean=0.517  min=0.496
+      Casual: max=0.525  mean=0.477  min=0.447
+    Keywords: max=0.586  mean=0.537  min=0.500
+Question form: max=0.590  mean=0.550  min=0.530
+    Indirect: max=0.516  mean=0.464  min=0.447
+More specific: max=0.593  mean=0.545  min=0.502
+
+
