@@ -28,48 +28,55 @@ def get_weather(location: str) -> str:
     return weather_data.get(location, f"Weather data not available for {location}")
 
 @tool
-def geo_calculator(payload: str) -> str:
+def geo_calculator(input_json: str) -> str:
     """
-    Evaluate an arithmetic / geometric expression.
+    Calculator tool. input_json MUST be a JSON string with ONE key:
+      - {"expr": "<expression>"}  OR {"expression": "<expression>"}
 
-    Preferred input (JSON string):
-      {"expression": "sin(0.5) + 3*(4-1)"}
+    The expression may use + - * / ** parentheses and functions sin, cos, tan, sqrt,
+    and constants pi, e.
 
-    Fallback: if payload is not valid JSON, it is treated as the expression directly,
-    e.g. payload="sin(0.5)".
-
-    Supports + - * / // % **, parentheses, sin(), cos(), tan(), sqrt(), pi.
-
-    Returns:
-      {"ok": true, "expression": "...", "result": <number>}
-      or
-      {"ok": false, "error": "..."}
+    Example input_json:
+      {"expr":"sin(5-5)"}
+      {"expr":"sin(48 + 2 - 4)"}
+    Returns a JSON string: {"ok": true, "expression": "...", "result": <float>}
     """
     try:
-        expr = None
+        params = json.loads(input_json)
 
-        # Try JSON first (meets the requirement)
-        try:
-            params = json.loads(payload)
-            if isinstance(params, dict):
-                expr = params.get("expression")
-            elif isinstance(params, str):
-                # JSON could be a plain string like "sin(0.5)"
-                expr = params
-        except Exception:
-            # Not JSON -> treat as raw expression (robustness)
-            expr = payload
+        if not isinstance(params, dict):
+            raise ValueError("Provide JSON like {'expr': '2*(3+4)'}")
+
+        expr = params.get("expr") or params.get("expression")
 
         if not expr or not isinstance(expr, str):
-            raise ValueError("Missing or invalid expression. Provide JSON {'expression': '...'} or a raw expression string.")
+            raise ValueError("Missing or invalid expression.")
 
-        result = float(ne.evaluate(expr))
-        return json.dumps({"ok": True, "expression": expr, "result": result})
+        result = float(
+            ne.evaluate(
+                expr,
+                local_dict={
+                    "pi": math.pi,
+                    "e": math.e,
+                    "sin": math.sin,
+                    "cos": math.cos,
+                    "tan": math.tan,
+                    "sqrt": math.sqrt,
+                }
+            )
+        )
+
+        return json.dumps({
+            "ok": True,
+            "expression": expr,
+            "result": result
+        })
 
     except Exception as e:
-        return json.dumps({"ok": False, "error": str(e)})
-
-
+        return json.dumps({
+            "ok": False,
+            "error": str(e)
+        })
 
 @tool
 def count_letter(text: str, letter: str) -> str:
@@ -77,6 +84,7 @@ def count_letter(text: str, letter: str) -> str:
     Count occurrences of a letter in a piece of text.
     Returns JSON string.
     """
+    letter = letter.strip()
     if len(letter) != 1:
         return json.dumps({"ok": False, "error": "letter must be a single character"})
 
@@ -119,8 +127,9 @@ def run_agent(user_query: str):
     messages = [
         SystemMessage(content="You are a helpful assistant. "
     "For ANY counting, you MUST use count_letter. "
-    "For ANY math (including trig/geometry/arithmetic), you MUST use geo_calculator. "
-    "Use word_count when asked about number of words."),
+    "For word totals, you MUST use word_count. "
+    "For ANY math, you MUST use geo_calculator. "
+    "IMPORTANT: geo_calculator must be called with input_json formatted exactly like {\"expr\":\"<expression>\"}."),
         HumanMessage(content=user_query)
     ]
     
@@ -195,6 +204,16 @@ if __name__ == "__main__":
     run_agent("What's the weather in New York and London?")
 
     print("\n" + "="*60)
+    print("TEST: word_count (basic)")
+    print("="*60)
+    run_agent('How many words are in "I love my cat"? Use tools.')
+
+    print("\n" + "="*60)
+    print("TEST: word_count (punctuation + spacing)")
+    print("="*60)
+    run_agent('How many words are in "Hello,   world!  I  love AI."? Use tools.')
+
+    print("\n" + "="*60)
     print("TEST: Two tool calls in one turn (count i and s)")
     print("="*60)
     run_agent("Are there more i's than s's in 'Mississippi riverboats'? Use tools.")
@@ -217,8 +236,19 @@ if __name__ == "__main__":
     print("="*60)
     run_agent(
         "Count i's and s's in 'Mississippi riverboats'. "
-        "Compute d = i_count - s_count. Then compute sin(d), sin(sin(d)), sin(sin(sin(d))), sin(sin(sin(sin(d))))) "
+        "Compute d = i_count - s_count. Then compute sin(d), sin(sin(d)), sin(sin(sin(d))), sin(sin(sin(sin(d)))), sin(sin(sin(sin(sin(d)))))) "
         "and show each intermediate value. Use tools for every step."
+    )
+
+    print("\n" + "="*60)
+    print("TEST: Use ALL tools (no weather JSON needed)")
+    print("="*60)
+    run_agent(
+        'Use tools only. Get the weather in London, and use the Fahrenheit temperature number from the tool output. '
+        'Count the number of "c" letters in "zucchini". '
+        'Count the number of words in "I love my cat". '
+        'Compute sin(temp_f + c_count - word_count). '
+        'Show temp_f, c_count, word_count, and the final result.'
     )
 
 
