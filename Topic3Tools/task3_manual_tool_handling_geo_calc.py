@@ -24,76 +24,42 @@ def get_weather(location: str) -> str:
     return weather_data.get(location, f"Weather data not available for {location}")
 
 def geo_calculator(input_json: str) -> str:
-    """
-    Custom calculator tool (from scratch).
-
-    Requirements met:
-    - Parse tool input with json.loads
-    - Format output with json.dumps
-    - Use numexpr for arithmetic expression evaluation
-    - Include geometry functions
-
-    Input JSON string supports either:
-      1) {"expr": "2*(3+4)"}
-      2) {"op": "area_circle", "r": 3}
-         {"op": "hypotenuse", "a": 3, "b": 4}
-         {"op": "distance_2d", "x1":0, "y1":0, "x2":3, "y2":4}
-         {"op": "area_rectangle", "w": 5, "h": 2}
-         {"op": "area_triangle", "b": 10, "h": 4}
-         {"op": "circumference_circle", "r": 3}
-    """
     try:
-        payload = json.loads(input_json)
-    except json.JSONDecodeError as e:
-        return json.dumps({"ok": False, "error": f"Invalid JSON input: {e}"})
+        params = json.loads(input_json)
 
-    # Expression mode (arithmetic)
-    if "expr" in payload:
-        expr = payload["expr"]
-        try:
-            val = float(ne.evaluate(expr))
-            return json.dumps({"ok": True, "mode": "expr", "expr": expr, "value": val})
-        except Exception as e:
-            return json.dumps({"ok": False, "mode": "expr", "expr": expr, "error": str(e)})
+        if not isinstance(params, dict):
+            raise ValueError("Provide JSON like {'expr': '2*(3+4)'}")
 
-    # Geometry mode
-    op = payload.get("op")
-    try:
-        if op == "area_circle":
-            r = float(payload["r"])
-            return json.dumps({"ok": True, "op": op, "value": math.pi * r * r})
+        expr = params.get("expr") or params.get("expression")
 
-        if op == "circumference_circle":
-            r = float(payload["r"])
-            return json.dumps({"ok": True, "op": op, "value": 2 * math.pi * r})
+        if not expr or not isinstance(expr, str):
+            raise ValueError("Missing or invalid expression.")
 
-        if op == "area_rectangle":
-            w = float(payload["w"])
-            h = float(payload["h"])
-            return json.dumps({"ok": True, "op": op, "value": w * h})
+        result = float(
+            ne.evaluate(
+                expr,
+                local_dict={
+                    "pi": math.pi,
+                    "e": math.e,
+                    "sin": math.sin,
+                    "cos": math.cos,
+                    "tan": math.tan,
+                    "sqrt": math.sqrt,
+                }
+            )
+        )
 
-        if op == "area_triangle":
-            b = float(payload["b"])
-            h = float(payload["h"])
-            return json.dumps({"ok": True, "op": op, "value": 0.5 * b * h})
+        return json.dumps({
+            "ok": True,
+            "expression": expr,
+            "result": result
+        })
 
-        if op == "hypotenuse":
-            a = float(payload["a"])
-            b = float(payload["b"])
-            return json.dumps({"ok": True, "op": op, "value": math.hypot(a, b)})
-
-        if op == "distance_2d":
-            x1 = float(payload["x1"]); y1 = float(payload["y1"])
-            x2 = float(payload["x2"]); y2 = float(payload["y2"])
-            return json.dumps({"ok": True, "op": op, "value": math.hypot(x2 - x1, y2 - y1)})
-
-        return json.dumps({"ok": False, "error": f"Unknown op '{op}'. Provide 'expr' or a supported 'op'."})
-
-    except KeyError as e:
-        return json.dumps({"ok": False, "op": op, "error": f"Missing parameter: {e}"})
     except Exception as e:
-        return json.dumps({"ok": False, "op": op, "error": str(e)})
-
+        return json.dumps({
+            "ok": False,
+            "error": str(e)
+        })
 
 # ============================================
 # PART 2: Describe Tools to the LLM
@@ -120,32 +86,22 @@ tools = [
     },
     # NEW TOOL 
     {
-        "type": "function",
-        "function": {
-            "name": "geo_calculator",
-            "description": (
-                "Use this tool for ALL calculations (arithmetic or geometry). "
-                "Do not do math in your head. Provide input_json as a JSON string."
-            ),
-            "parameters": {
-                "type": "object",
-                "properties": {
-                    "input_json": {
-                        "type": "string",
-                        "description": (
-                            "A JSON string. Either expression mode: "
-                            "{\"expr\":\"2*(3+4)\"} "
-                            "or geometry mode examples: "
-                            "{\"op\":\"area_circle\",\"r\":3}, "
-                            "{\"op\":\"hypotenuse\",\"a\":3,\"b\":4}, "
-                            "{\"op\":\"distance_2d\",\"x1\":0,\"y1\":0,\"x2\":3,\"y2\":4}"
-                        )
-                    }
-                },
-                "required": ["input_json"]
-            }
+  "type": "function",
+  "function": {
+    "name": "geo_calculator",
+    "description": "Use this tool for ALL calculations (arithmetic or trig). Provide input_json as a JSON string.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "input_json": {
+          "type": "string",
+          "description": "JSON string like {\"expr\":\"19.5*(7+2)\"} or {\"expr\":\"sin(pi/2)+cos(0)\"}"
         }
+      },
+      "required": ["input_json"]
     }
+  }
+}
 ]
 
 
@@ -164,7 +120,7 @@ def run_agent(user_query: str, model: str = "gpt-4.1-mini", force_tool_use: bool
 
     system_prompt = (
         "You are a helpful assistant. "
-        "If the user asks for ANY calculation (arithmetic or geometry), you MUST call geo_calculator. "
+        "If the user asks for ANY calculation (arithmetic or trig), you MUST call geo_calculator. "
         "Do NOT compute yourself."
     )
     
@@ -187,7 +143,7 @@ def run_agent(user_query: str, model: str = "gpt-4.1-mini", force_tool_use: bool
             model="gpt-4o-mini",
             messages=messages,
             tools=tools,  # ← This tells the LLM what tools are available
-            tool_choice="auto"  # Let the model decide whether to use tools
+            tool_choice=tool_choice  # Let the model decide whether to use tools
         )
         
         assistant_message = response.choices[0].message
@@ -230,7 +186,6 @@ def run_agent(user_query: str, model: str = "gpt-4.1-mini", force_tool_use: bool
                 })
             
             print()
-            # Loop continues - LLM will see the tool results
             tool_choice = "auto"
         else:
             # No tool calls - LLM provided a final answer
@@ -262,16 +217,16 @@ if __name__ == "__main__":
     run_agent("What's the weather in New York and London?")
 
     print("\n" + "="*60)
-    print("TEST 2: Calculator expr")
+    print("TEST 4: Calculator expr")
     print("="*60)
     run_agent("Compute 19.5 * (7 + 2).")
 
     print("\n" + "="*60)
-    print("TEST 3: Geometry")
+    print("TEST 5: Trig expression")
     print("="*60)
-    run_agent("What is the area of a circle with radius 3?")
+    run_agent("Compute sin(pi/2) + cos(0).")
 
     print("\n" + "="*60)
-    print("TEST 4: If model resists tool use, force it")
+    print("TEST 6: Force tool use")
     print("="*60)
-    run_agent("What is the hypotenuse when a=3 and b=4?", force_tool_use=True)
+    run_agent("Compute sqrt(2) * sqrt(8). Return a decimal.", force_tool_use=True)

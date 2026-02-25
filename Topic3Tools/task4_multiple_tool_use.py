@@ -27,36 +27,6 @@ def get_weather(location: str) -> str:
     }
     return weather_data.get(location, f"Weather data not available for {location}")
 
-# @tool
-# def geo_calculator(expr: str = "", op: str = "", r: float = 0.0, a: float = 0.0, b: float = 0.0,
-#                   x1: float = 0.0, y1: float = 0.0, x2: float = 0.0, y2: float = 0.0) -> str:
-#     """
-#     Calculator for arithmetic + geometry. Returns JSON string.
-#     Provide either:
-#       - expr="19.5*(7+2)"
-#       - op="area_circle", r=3
-#       - op="hypotenuse", a=3, b=4
-#       - op="distance_2d", x1=0,y1=0,x2=3,y2=4
-#     """
-#     try:
-#         if expr:
-#             val = float(ne.evaluate(expr))
-#             return json.dumps({"ok": True, "mode": "expr", "expr": expr, "value": val})
-
-#         if op == "area_circle":
-#             return json.dumps({"ok": True, "op": op, "value": math.pi * float(r) * float(r)})
-
-#         if op == "hypotenuse":
-#             return json.dumps({"ok": True, "op": op, "value": math.hypot(float(a), float(b))})
-
-#         if op == "distance_2d":
-#             return json.dumps({"ok": True, "op": op, "value": math.hypot(float(x2-x1), float(y2-y1))})
-
-#         return json.dumps({"ok": False, "error": f"Unknown or missing op/expr (op={op})"})
-#     except Exception as e:
-#         return json.dumps({"ok": False, "error": str(e)})
-
-
 @tool
 def geo_calculator(payload: str) -> str:
     """

@@ -1,4 +1,4 @@
-Script started on 2026-01-28 03:42:21+00:00 [TERM="xterm-color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
+Script started on 2026-02-25 03:56:37+00:00 [TERM="xterm-color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
 ============================================================
 TEST 1: Query requiring tool
 ============================================================
@@ -42,48 +42,48 @@ Assistant: The weather in New York is cloudy with a temperature of 55°F. In Lon
 
 
 ============================================================
-TEST 2: Calculator expr
+TEST 4: Calculator expr
 ============================================================
 User: Compute 19.5 * (7 + 2).
 
 --- Iteration 1 ---
 LLM wants to call 1 tool(s)
   Tool: geo_calculator
-  Args: {'input_json': '{"expr":"19.5 * (7 + 2)"}'}
-  Result: {"ok": true, "mode": "expr", "expr": "19.5 * (7 + 2)", "value": 175.5}
+  Args: {'input_json': '{"expr":"19.5*(7+2)"}'}
+  Result: {"ok": true, "expression": "19.5*(7+2)", "result": 175.5}
 
 --- Iteration 2 ---
 Assistant: The result of the calculation \( 19.5 \times (7 + 2) \) is 175.5.
 
 
 ============================================================
-TEST 3: Geometry
+TEST 5: Trig expression
 ============================================================
-User: What is the area of a circle with radius 3?
+User: Compute sin(pi/2) + cos(0).
 
 --- Iteration 1 ---
 LLM wants to call 1 tool(s)
   Tool: geo_calculator
-  Args: {'input_json': '{"op":"area_circle","r":3}'}
-  Result: {"ok": true, "op": "area_circle", "value": 28.274333882308138}
+  Args: {'input_json': '{"expr":"sin(pi/2) + cos(0)"}'}
+  Result: {"ok": true, "expression": "sin(pi/2) + cos(0)", "result": 2.0}
 
 --- Iteration 2 ---
-Assistant: The area of a circle with a radius of 3 is approximately 28.27.
+Assistant: The result of \( \sin\left(\frac{\pi}{2}\right) + \cos(0) \) is \( 2.0 \).
 
 
 ============================================================
-TEST 4: If model resists tool use, force it
+TEST 6: Force tool use
 ============================================================
-User: What is the hypotenuse when a=3 and b=4?
+User: Compute sqrt(2) * sqrt(8). Return a decimal.
 
 --- Iteration 1 ---
 LLM wants to call 1 tool(s)
   Tool: geo_calculator
-  Args: {'input_json': '{"op":"hypotenuse","a":3,"b":4}'}
-  Result: {"ok": true, "op": "hypotenuse", "value": 5.0}
+  Args: {'input_json': '{"expr":"sqrt(2)*sqrt(8)"}'}
+  Result: {"ok": true, "expression": "sqrt(2)*sqrt(8)", "result": 4.000000000000001}
 
 --- Iteration 2 ---
-Assistant: The hypotenuse when \( a = 3 \) and \( b = 4 \) is \( 5.0 \).
+Assistant: The result of \( \sqrt{2} * \sqrt{8} \) is approximately 4.0.
 
 
-Script done on 2026-01-28 03:42:34+00:00 [COMMAND_EXIT_CODE="0"]
+Script done on 2026-02-25 03:56:46+00:00 [COMMAND_EXIT_CODE="0"]

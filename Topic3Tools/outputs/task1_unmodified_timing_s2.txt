@@ -54,8 +54,36 @@ Progress: 1/1 subjects
 ======================================================================
 Evaluating subject: abstract_algebra
 ======================================================================
-Testing abstract_algebra:   0% 0/100 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
-Testing abstract_algebra:   1% 1/100 [00:00<00:42,  2.32it/s]Testing abstract_algebra:   5% 5/100 [00:00<00:08, 10.97it/s]Testing abstract_algebra:   9% 9/100 [00:00<00:05, 17.32it/s]Testing abstract_algebra:  12% 12/100 [00:00<00:04, 20.15it/s]Testing abstract_algebra:  16% 16/100 [00:00<00:03, 24.68it/s]Testing abstract_algebra:  20% 20/100 [00:01<00:02, 27.84it/s]Testing abstract_algebra:  24% 24/100 [00:01<00:02, 30.40it/s]Testing abstract_algebra:  28% 28/100 [00:01<00:02, 31.72it/s]Testing abstract_algebra:  32% 32/100 [00:01<00:02, 32.75it/s]Testing abstract_algebra:  36% 36/100 [00:01<00:01, 33.44it/s]Testing abstract_algebra:  40% 40/100 [00:01<00:01, 33.34it/s]Testing abstract_algebra:  44% 44/100 [00:01<00:01, 33.40it/s]Testing abstract_algebra:  48% 48/100 [00:01<00:01, 32.94it/s]Testing abstract_algebra:  52% 52/100 [00:01<00:01, 34.05it/s]Testing abstract_algebra:  56% 56/100 [00:02<00:01, 34.05it/s]Testing abstract_algebra:  60% 60/100 [00:02<00:01, 34.88it/s]Testing abstract_algebra:  64% 64/100 [00:02<00:01, 35.32it/s]Testing abstract_algebra:  68% 68/100 [00:02<00:00, 35.60it/s]Testing abstract_algebra:  72% 72/100 [00:02<00:00, 35.98it/s]Testing abstract_algebra:  76% 76/100 [00:02<00:00, 36.16it/s]Testing abstract_algebra:  80% 80/100 [00:02<00:00, 36.15it/s]Testing abstract_algebra:  84% 84/100 [00:02<00:00, 34.92it/s]Testing abstract_algebra:  88% 88/100 [00:02<00:00, 34.91it/s]Testing abstract_algebra:  92% 92/100 [00:03<00:00, 35.53it/s]Testing abstract_algebra:  96% 96/100 [00:03<00:00, 36.08it/s]Testing abstract_algebra: 100% 100/100 [00:03<00:00, 36.58it/s]Testing abstract_algebra: 100% 100/100 [00:03<00:00, 30.60it/s]
+
+Testing abstract_algebra:   0% 0/100 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+Testing abstract_algebra:   1% 1/100 [00:00<00:42,  2.32it/s]
+Testing abstract_algebra:   5% 5/100 [00:00<00:08, 10.97it/s]
+Testing abstract_algebra:   9% 9/100 [00:00<00:05, 17.32it/s]
+Testing abstract_algebra:  12% 12/100 [00:00<00:04, 20.15it/s]
+Testing abstract_algebra:  16% 16/100 [00:00<00:03, 24.68it/s]
+Testing abstract_algebra:  20% 20/100 [00:01<00:02, 27.84it/s]
+Testing abstract_algebra:  24% 24/100 [00:01<00:02, 30.40it/s]
+Testing abstract_algebra:  28% 28/100 [00:01<00:02, 31.72it/s]
+Testing abstract_algebra:  32% 32/100 [00:01<00:02, 32.75it/s]
+Testing abstract_algebra:  36% 36/100 [00:01<00:01, 33.44it/s]
+Testing abstract_algebra:  40% 40/100 [00:01<00:01, 33.34it/s]
+Testing abstract_algebra:  44% 44/100 [00:01<00:01, 33.40it/s]
+Testing abstract_algebra:  48% 48/100 [00:01<00:01, 32.94it/s]
+Testing abstract_algebra:  52% 52/100 [00:01<00:01, 34.05it/s]
+Testing abstract_algebra:  56% 56/100 [00:02<00:01, 34.05it/s]
+Testing abstract_algebra:  60% 60/100 [00:02<00:01, 34.88it/s]
+Testing abstract_algebra:  64% 64/100 [00:02<00:01, 35.32it/s]
+Testing abstract_algebra:  68% 68/100 [00:02<00:00, 35.60it/s]
+Testing abstract_algebra:  72% 72/100 [00:02<00:00, 35.98it/s]
+Testing abstract_algebra:  76% 76/100 [00:02<00:00, 36.16it/s]
+Testing abstract_algebra:  80% 80/100 [00:02<00:00, 36.15it/s]
+Testing abstract_algebra:  84% 84/100 [00:02<00:00, 34.92it/s]
+Testing abstract_algebra:  88% 88/100 [00:02<00:00, 34.91it/s]
+Testing abstract_algebra:  92% 92/100 [00:03<00:00, 35.53it/s]
+Testing abstract_algebra:  96% 96/100 [00:03<00:00, 36.08it/s]
+Testing abstract_algebra: 100% 100/100 [00:03<00:00, 36.58it/s]
+Testing abstract_algebra: 100% 100/100 [00:03<00:00, 30.60it/s]
 ✓ Result: 24/100 correct = 24.00%
 
 ======================================================================
