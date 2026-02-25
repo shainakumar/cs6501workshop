@@ -1,8 +1,0 @@
-Script started on 2026-02-24 23:37:44+00:00 [TERM="xterm-color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
-python3: can't open file '/content/cs6501workshop/Running_an_LLM/GC_modified_mmlu_eval.py': [Errno 2] No such file or directory
-
-real	0m0.125s
-user	0m0.069s
-sys	0m0.021s
-
-Script done on 2026-02-24 23:37:44+00:00 [COMMAND_EXIT_CODE="2"]
