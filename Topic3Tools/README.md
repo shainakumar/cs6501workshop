@@ -60,3 +60,16 @@ This implementation rewrites the earlier manual tool-handling loop into a fully 
 Currently, tool execution is handled inside the `call_tools` node by iterating through `last_msg.tool_calls` and invoking each tool one at a time. Thus, even when the LLM requests multiple independent tool calls in the same turn (e.g., getting the weather in London while also counting letters in “zucchini” and counting words in “I love my cat”), those tools are executed sequentially. We know that these tool calls do not depend on each other’s outputs, so the agent could run independent tool invocations in parallel and then combine all resulting `ToolMessage`s once they complete. 
 
 Link to Colab Notebook: https://colab.research.google.com/drive/1clURnZmY7Llq5bXzVnlz9eyemZMSqHZO?usp=sharing 
+
+## Table of Contents
+
+### Core Scripts
+- `manual-tool-handling.py` – Baseline manual tool-calling loop  
+- `task1_*` – MMLU evaluation scripts (base + Ollama + subject runs)  
+- `task3_manual_tool_handling_geo_calc.py` – Custom calculator tool  
+- `task4_multiple_tool_use.py` – Multi-tool orchestration with LangGraph  
+- `task5_single_long_convo.py` – Persistent LangGraph agent with SQLite recovery  
+
+### Directories
+- `outputs/` – Execution traces, timing logs, graph image, recovery logs  
+- `raw_results/` – Raw MMLU JSON results and Ollama logs  
