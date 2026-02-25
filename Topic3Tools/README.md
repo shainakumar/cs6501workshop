@@ -58,3 +58,5 @@ This implementation rewrites the earlier manual tool-handling loop into a fully 
 ## (6) Opportunity for Parallelization
 
 Currently, tool execution is handled inside the `call_tools` node by iterating through `last_msg.tool_calls` and invoking each tool one at a time. Thus, even when the LLM requests multiple independent tool calls in the same turn (e.g., getting the weather in London while also counting letters in “zucchini” and counting words in “I love my cat”), those tools are executed sequentially. We know that these tool calls do not depend on each other’s outputs, so the agent could run independent tool invocations in parallel and then combine all resulting `ToolMessage`s once they complete. 
+
+Link to Colab Notebook: https://colab.research.google.com/drive/1clURnZmY7Llq5bXzVnlz9eyemZMSqHZO?usp=sharing 
