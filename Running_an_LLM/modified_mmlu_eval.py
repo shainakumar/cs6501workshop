@@ -431,6 +431,10 @@ def evaluate_subject(model, tokenizer, subject, device, verbose=False):
     total = 0
     invalid_responses = 0
     timing_info = TimingInfo()
+    # store per-question outputs for agreement/overlap analysis
+    ground_truth_answers = []
+    model_answers = []
+    is_correct_list = []
     
     if verbose:
         print(f"\n{'='*70}")
@@ -449,13 +453,20 @@ def evaluate_subject(model, tokenizer, subject, device, verbose=False):
         # Check if response was valid
         if predicted_answer is None:
             invalid_responses += 1
+            pred_for_storage = "INVALID"
             is_correct = False
         else:
-            is_correct = predicted_answer == correct_answer
+            pred_for_storage = predicted_answer
+            is_correct = (predicted_answer == correct_answer)
             if is_correct:
                 correct += 1
-        
+
         total += 1
+
+        # store per-question info
+        ground_truth_answers.append(correct_answer)
+        model_answers.append(pred_for_storage)
+        is_correct_list.append(is_correct)
         
         # Print immediately in verbose mode
         if verbose:
@@ -493,7 +504,12 @@ def evaluate_subject(model, tokenizer, subject, device, verbose=False):
             "real_time": timing_info.real_time,
             "cpu_time": timing_info.cpu_time,
             "gpu_time": timing_info.gpu_time
-        }
+        },
+
+        # per-question outputs (this enables agreement/overlap plots)
+        "ground_truth_answers": ground_truth_answers,
+        "model_answers": model_answers,
+        "is_correct": is_correct_list
     }
 
 
@@ -512,6 +528,7 @@ def evaluate_model(model_name, device, verbose=False):
     total_questions = 0
     total_invalid = 0
     total_timing = TimingInfo()
+
     
     print(f"\n{'='*70}")
     print(f"Starting evaluation on {len(MMLU_SUBJECTS)} subjects")
