@@ -1,19 +1,5 @@
 ## (4) Local Timing Experiments (MacBook Air M1)
 
-All experiments were timed using the shell `time` command:
-
-```bash
-time python llama_mmlu_eval.py
-```
-
-The `time` command reports:
-
-- **real** → Wall-clock time (total elapsed time)
-- **user** → CPU time spent in user space
-- **sys** → CPU time spent in kernel space
-
-Wall-clock time (`real`) is used as the primary performance metric.
-
 The assignment required comparing:
 - GPU + no quantization  
 - GPU + 4-bit quantization  
@@ -86,4 +72,5 @@ This approach is simple, predictable, and computationally inexpensive compared t
 I added a command-line flag that allows conversation history to be disabled. When the flag is turned off, the model receives only the current user message (plus the system prompt), and previous turns are not included in the prompt. When history is enabled, the full managed conversation window is included.
 
 This makes it easy to directly compare multi-turn performance under the two conditions (enabled or disabled history). In multi-turn conversations, the difference was immediately visible. When history was enabled, the model maintained context across turns, and could correctly reference earlier information (my name) and maintain topic continuity about me and my cat. When history was disabled, the model lost context, could not recall prior details, and responded saying it did not have any information related to my questions. It also thought each turn was our first conversation. As expected, this demonstrates that conversation memory is essential for coherent multi-turn dialogue. Without context management, the agent either fails due to overflow (if history grows unbounded) or loses conversational continuity (if history is disabled). Ultimately, strong context window management strategies provide a balance between memory retention and computational constraints.
+
 
