@@ -16,7 +16,7 @@ import ollama
 # CONSTANTS
 # ─────────────────────────────────────────────────────────────────────────────
 MODEL          = "llava:7b-v1.6-mistral-q4_0"
-VIDEO_PATH = "/content/cs6501workshop/Topic6VLM/video.mp4"
+VIDEO_PATH = "/content/cs6501workshop/Topic6VLM/2minute.mov"
 FRAME_DIR      = "frames"
 FRAME_INTERVAL = 2          # seconds between sampled frames
 MAX_SIDE       = 216        # resize frames before sending to LLaVA
