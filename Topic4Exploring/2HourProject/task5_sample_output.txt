@@ -1,0 +1,55 @@
+================================================================================
+Smart Travel Planner - Hour 2: Agent Integration
+================================================================================
+
+✅ API key found
+
+Features:
+  • Takes destination + travel dates
+  • Fetches forecast for exact date window
+  • Generates structured output:
+    - Weather snapshot
+    - Packing list with reasons
+    - Activity recommendations
+    - Bad-weather backup plan
+
+Commands: 'verbose', 'quiet', 'quit'/'exit'
+
+Example: 'I'm going to Paris March 15-18, what should I pack?'
+================================================================================
+/content/cs6501workshop/Topic4Exploring/2HourProject/weather_travel_planner.py:473: LangGraphDeprecatedSinceV10: create_react_agent has been moved to `langchain.agents`. Please update your import to `from langchain.agents import create_agent`. Deprecated in LangGraph V1.0 to be removed in V2.0.
+  react_agent = create_react_agent(
+[SYSTEM] Travel planner agent created
+[SYSTEM] Agent graph → 'travel_planner_react_agent.png'
+[SYSTEM] Conversation graph → 'travel_planner_conversation.png'
+
+[SYSTEM] Starting conversation...
+
+
+You: im going to charlottesville feb 8 2026 and feb 9 2026
+
+🤖 Travel Planner:
+📍 WEATHER SNAPSHOT
+During your trip to Charlottesville on February 8 and 9, 2026, expect chilly weather. On the 8th, temperatures will range from -9.3°C to -0.8°C under clear skies. The 9th will see a slight warming, with temperatures between -10.8°C and 4.9°C, but scattered clouds will accompany the day.
+
+🎒 PACKING LIST
+Essential items based on temperatures and conditions:
+- Warm winter coat: Essential for staying warm in sub-zero temperatures.
+- Thermal layers: To keep you insulated against the cold.
+- Gloves: To protect your hands from the biting chill.
+- Warm hat: Helps retain body heat and keep you comfortable.
+- Scarf: An extra layer to protect your neck and face from the cold wind.
+- Waterproof boots: To keep your feet dry and warm, especially if there's snow.
+- Thick socks: To provide additional warmth and comfort.
+- Lip balm: To prevent chapped lips in dry, cold air.
+
+🎯 RECOMMENDED ACTIVITIES
+Based on weather conditions:
+- Visit the University of Virginia: A beautiful campus to explore, especially under clear skies on the 8th.
+- Enjoy a hot drink at a local café: Perfect for warming up after being outdoors.
+- Take a scenic drive: The winter landscapes can be stunning, especially with clear skies.
+- Explore local museums: Great indoor activities to escape the cold.
+- Go for a winter hike: If you're equipped for the cold, nearby trails can offer beautiful views of winter scenery.
+
+You: 
+Session terminated, killing shell...^C
