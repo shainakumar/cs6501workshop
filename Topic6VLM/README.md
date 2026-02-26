@@ -236,7 +236,7 @@ The screenshot below shows the Gradio UI with a graduation photo loaded and two 
 ![Exercise 1 sample output](Lab6Exercise1.jpg)
 
 **Turn 1** — "How many people are in this image?"
-LLaVA replies concisely: *"There are four people in this image."* — correct and to the point.
+LLaVA replies concisely: *"There are four people in this image."* — WRONG! 
 
 **Turn 2** — "Are there boys or girls in the image?"
 LLaVA's reply builds directly on Turn 1: *"There is one girl and three young women, all wearing graduation caps and gowns..."* It references the same four people identified in the previous turn rather than re-examining the image from scratch. This confirms the rolling context window is working — the full `HumanMessage`/`AIMessage` history is being passed to LLaVA on each call.
