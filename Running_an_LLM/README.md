@@ -73,4 +73,137 @@ I added a command-line flag that allows conversation history to be disabled. Whe
 
 This makes it easy to directly compare multi-turn performance under the two conditions (enabled or disabled history). In multi-turn conversations, the difference was immediately visible. When history was enabled, the model maintained context across turns, and could correctly reference earlier information (my name) and maintain topic continuity about me and my cat. When history was disabled, the model lost context, could not recall prior details, and responded saying it did not have any information related to my questions. It also thought each turn was our first conversation. As expected, this demonstrates that conversation memory is essential for coherent multi-turn dialogue. Without context management, the agent either fails due to overflow (if history grows unbounded) or loses conversational continuity (if history is disabled). Ultimately, strong context window management strategies provide a balance between memory retention and computational constraints.
 
+# Table of Contents   
+Below is a guide to where everything is located.
+
+---
+
+## Root Directory (`Running_an_LLM/`)
+
+### Core Evaluation Scripts
+- `llama_mmlu_eval.py`  
+  Original single-model MMLU evaluation script (baseline).
+
+- `modified_mmlu_eval.py`  
+  Multi-model evaluation script (10 subjects, timing instrumentation, verbose mode).
+
+- `eval_mps_noquant.py`  
+  Local Apple Silicon (MPS) evaluation without quantization.
+
+- `eval_cpu_noquant.py`  
+  Local CPU evaluation without quantization.
+
+---
+
+### Chat Agent
+- `simple_chat_agent.py`  
+  Chat agent with context window management.
+
+- `simple_agent_with_history.txt`  
+  Example conversation with history enabled.
+
+- `simple_agent_without_history.txt`  
+  Example conversation with history disabled.
+
+---
+
+### Results (JSON)
+- `multi_model_mmlu_results_full_*.json`  
+  Full multi-model evaluation results.
+
+- `llama_3.2_1b_mmlu_results_full_*.json`  
+  Single-model Llama evaluation results.
+
+---
+
+### Timing Outputs
+- `outputs/`
+  - `timing_mps_noquant.txt`
+  - `timing_cpu_noquant.txt`
+  - `timing_modified_mmlu_eval.txt`
+  - `updated_timing_modified_mmlu_eval.txt`
+  - `baseline_mps_noquant.txt`
+  - `env_info.txt`
+
+These contain raw timing logs from local experiments.
+
+---
+
+## Google Colab Experiments (`Running_an_LLM/colab/`)
+
+### Colab Evaluation Scripts
+- `GC_modified_mmlu_eval.py`
+- `GC_modified_mmlu_eval_more_models.py`
+- `GC_eval_cpu_noquant.py`
+- `GC_eval_mps_noquant.py`
+- `llama_mmlu_eval.py`
+
+These are Colab-compatible versions of evaluation scripts.
+
+---
+
+### Colab JSON Results
+- `multi_model_mmlu_results_full_*.json`
+- `multi_model_mmlu_results_4bit_*.json`
+- `llama_3.2_1b_mmlu_results_full_*.json`
+
+---
+
+### Colab Timing Logs
+`colab/outputs/`
+- `GC_timing_cpu_noquant.txt`
+- `GC_timing_mps_noquant.txt`
+- `GC_timing_3multi_eval.txt`
+- `GC_timing_3multi_eval_verbose.txt`
+- `GC_timing_6multi_eval.txt`
+- `GC_updated_timing_3multi_eval.txt`
+- `GC_baseline_mps_noquant.txt`
+
+These contain timing data for GPU/CPU experiments on Colab.
+
+---
+
+## Figures (`Running_an_LLM/figures/`)
+
+### Local Figures
+`figures/local/`
+- Overall accuracy plots
+- Subject-level accuracy heatmaps
+- Agreement matrices
+- Wrong-question Jaccard heatmaps
+- Confusion matrices
+- CSV summary tables
+
+These correspond to the **Local Analysis** section.
+
+---
+
+### Colab Figures
+`figures/colab/`
+- Overall accuracy plots
+- Subject-level accuracy heatmaps
+- Agreement matrices
+- Wrong-question Jaccard heatmaps
+- Confusion matrices
+- CSV summary tables
+
+These correspond to the **Google Colab Analysis** section.
+
+---
+
+## Additional Files
+
+- `Local_Figures.pdf`  
+  Compiled local plots.
+
+- `GC_Figures.pdf`  
+  Compiled Colab plots.
+
+- `Topic1LLMs.ipynb`  
+  Notebook used during initial experiments.
+
+- `README.md`  
+  The write-up. 
+
+---
 
