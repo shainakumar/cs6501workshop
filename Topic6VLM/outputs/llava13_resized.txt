@@ -1,0 +1,116 @@
+Video: /content/cs6501workshop/Topic6VLM/2minute.mov
+  FPS: 30.0  |  Total frames: 3672  |  Duration: 122.5s
+  Sampling every 2s → ~61 frames
+
+Extracted 63 frames to 'frames/'
+
+Scanning frames...
+
+Frame    Time     Person?    Event
+─────────────────────────────────────────────
+1        00:00    NO         
+2        00:01    YES        ⬅️  ENTERED
+3        00:03    YES        
+4        00:05    NO         ➡️  EXITED
+5        00:07    NO         
+6        00:09    NO         
+7        00:11    NO         
+8        00:13    YES        ⬅️  ENTERED
+9        00:15    NO         ➡️  EXITED
+10       00:17    NO         
+11       00:19    NO         
+12       00:21    NO         
+13       00:23    YES        ⬅️  ENTERED
+14       00:25    YES        
+15       00:27    NO         ➡️  EXITED
+16       00:29    YES        ⬅️  ENTERED
+17       00:31    NO         ➡️  EXITED
+18       00:33    YES        ⬅️  ENTERED
+19       00:35    NO         ➡️  EXITED
+20       00:37    NO         
+21       00:39    NO         
+22       00:41    NO         
+23       00:43    NO         
+24       00:45    NO         
+25       00:47    NO         
+26       00:49    NO         
+27       00:51    YES        ⬅️  ENTERED
+28       00:53    NO         ➡️  EXITED
+29       00:55    YES        ⬅️  ENTERED
+30       00:57    YES        
+31       00:59    YES        
+32       01:01    NO         ➡️  EXITED
+33       01:02    NO         
+34       01:04    NO         
+35       01:06    NO         
+36       01:08    NO         
+37       01:10    NO         
+38       01:12    NO         
+39       01:14    YES        ⬅️  ENTERED
+40       01:16    YES        
+41       01:18    NO         ➡️  EXITED
+42       01:20    NO         
+43       01:22    NO         
+44       01:24    NO         
+45       01:26    NO         
+46       01:28    NO         
+47       01:30    NO         
+48       01:32    NO         
+49       01:34    NO         
+50       01:36    NO         
+51       01:38    YES        ⬅️  ENTERED
+52       01:40    NO         ➡️  EXITED
+53       01:42    NO         
+54       01:44    YES        ⬅️  ENTERED
+55       01:46    NO         ➡️  EXITED
+56       01:48    NO         
+57       01:50    NO         
+58       01:52    YES        ⬅️  ENTERED
+59       01:54    NO         ➡️  EXITED
+60       01:56    YES        ⬅️  ENTERED
+61       01:58    NO         ➡️  EXITED
+62       02:00    NO         
+63       02:02    NO         
+
+═════════════════════════════════════════════
+  SURVEILLANCE REPORT
+═════════════════════════════════════════════
+  00:01  —  Person ENTERED scene
+  00:05  —  Person EXITED scene
+  00:13  —  Person ENTERED scene
+  00:15  —  Person EXITED scene
+  00:23  —  Person ENTERED scene
+  00:27  —  Person EXITED scene
+  00:29  —  Person ENTERED scene
+  00:31  —  Person EXITED scene
+  00:33  —  Person ENTERED scene
+  00:35  —  Person EXITED scene
+  00:51  —  Person ENTERED scene
+  00:53  —  Person EXITED scene
+  00:55  —  Person ENTERED scene
+  01:01  —  Person EXITED scene
+  01:14  —  Person ENTERED scene
+  01:18  —  Person EXITED scene
+  01:38  —  Person ENTERED scene
+  01:40  —  Person EXITED scene
+  01:44  —  Person ENTERED scene
+  01:46  —  Person EXITED scene
+  01:52  —  Person ENTERED scene
+  01:54  —  Person EXITED scene
+  01:56  —  Person ENTERED scene
+  01:58  —  Person EXITED scene
+═════════════════════════════════════════════
+
+Time in scene:
+  Visit 1: 00:01 → 00:05  (4s)
+  Visit 2: 00:13 → 00:15  (2s)
+  Visit 3: 00:23 → 00:27  (4s)
+  Visit 4: 00:29 → 00:31  (2s)
+  Visit 5: 00:33 → 00:35  (2s)
+  Visit 6: 00:51 → 00:53  (2s)
+  Visit 7: 00:55 → 01:01  (6s)
+  Visit 8: 01:14 → 01:18  (4s)
+  Visit 9: 01:38 → 01:40  (2s)
+  Visit 10: 01:44 → 01:46  (2s)
+  Visit 11: 01:52 → 01:54  (2s)
+  Visit 12: 01:56 → 01:58  (2s)
