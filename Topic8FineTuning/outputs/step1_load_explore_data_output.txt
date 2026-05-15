@@ -1,0 +1,8 @@
+Total examples: 78577
+Training examples: 78377
+Test examples: 200
+
+Sample example:
+  Question: What is the lowest lap with a 145.926 qual?
+  Context:  CREATE TABLE table_name_6 (laps INTEGER, qual VARCHAR)...
+  Answer:   SELECT MIN(laps) FROM table_name_6 WHERE qual = "145.926"

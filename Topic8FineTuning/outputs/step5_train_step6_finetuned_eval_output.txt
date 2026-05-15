@@ -1,0 +1,7 @@
+Epoch 1/1, update 100, loss: 0.0345
+Epoch 1/1, update 200, loss: 0.0333
+Epoch 1/1, update 300, loss: 0.0377
+Epoch 1/1, update 307, loss: 0.0367
+
+Model saved to: tinker://152d5797-a881-5247-902b-1dd6875e363e:train:0/sampler_weights/checkpoint
+Finetuned model accuracy: 86.50% (173/200)

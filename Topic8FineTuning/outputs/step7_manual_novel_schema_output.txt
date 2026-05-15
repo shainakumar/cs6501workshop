@@ -1,0 +1,15 @@
+Input: {'question': 'What are the names of employees in the engineering department?', 'context': 'CREATE TABLE employees (id INTEGER, name VARCHAR, salary REAL, department VARCHAR)', 'answer': ''}
+Model Output: SELECT id, name FROM employees WHERE department = 'engineering'
+========================================================================================================================
+Input: {'question': 'How many products cost more than 50 dollars?', 'context': 'CREATE TABLE products (id INTEGER, name VARCHAR, price REAL, category VARCHAR)', 'answer': ''}
+Model Output: SELECT SUM(id) FROM products WHERE price > 50 AND category = 'food' AND name = 'food'
+========================================================================================================================
+Input: {'question': 'What is the highest score in the science class?', 'context': 'CREATE TABLE students (id INTEGER, name VARCHAR, score INTEGER, class VARCHAR)', 'answer': ''}
+Model Output: SELECT MAX(score) FROM students WHERE class = 'Science'
+========================================================================================================================
+Input: {'question': 'List the top 3 customers by total order amount.', 'context': 'CREATE TABLE orders (id INTEGER, customer VARCHAR, amount REAL, date VARCHAR)', 'answer': ''}
+Model Output: SELECT customer FROM orders GROUP BY customer ORDER BY SUM(amount) DESC LIMIT 3
+========================================================================================================================
+Input: {'question': 'How many students are enrolled in each department?', 'context': 'CREATE TABLE courses (id INTEGER, name VARCHAR, department VARCHAR); CREATE TABLE enrollments (student_id INTEGER, course_id INTEGER, grade VARCHAR)', 'answer': ''}
+Model Output: SELECT T1.student_id, T2.name, T3.department FROM enrollments AS T1 JOIN courses AS T2 ON T1.course_id = T2.id JOIN students AS T3 ON T1.student_id = T3.id GROUP BY T3.department
+========================================================================================================================

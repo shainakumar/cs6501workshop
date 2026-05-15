@@ -14,3 +14,15 @@ When the fine-tuned model was wrong, the errors were mostly logic and schema-gro
 
 The enrollment example showed a schema hallucination error. The provided schema had `courses` and `enrollments`, but the model referenced a nonexistent `students` table. This means the model was not always constrained by the schema in the prompt.
 
+## Directory Contents
+
+| Path | Purpose |
+| --- | --- |
+| `Topic8FineTuning.ipynb` | Topic 8 notebook |
+| `step1_load_explore_data.py` | Load and inspect dataset |
+| `step3_evaluate_base_model.py` | Evaluate base model |
+| `step5_train_step6_evaluate_finetuned.py` | Train and evaluate fine-tuned model |
+| `step7_manual_novel_schema_tests.py` | Manual novel-schema tests |
+| `sql_matches.py`, `finetuning_common.py` | Shared helpers |
+| `run_finetuning_outputs.sh` | Runs scripts and saves outputs |
+| `outputs/` | Saved terminal outputs |

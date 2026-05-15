@@ -58,3 +58,11 @@ In a real multi-agent system, we would want validation steps such as checking so
 
 With 1,000 agents, the current routing and health checks would become inefficient. The router would spend too much time comparing every question against every agent, and the registry would struggle to ping every agent often enough. A better design might be to store searchable agent embeddings ahead of time and have agents send regular heartbeats to show they are still online.
 
+## Directory Contents
+
+| Path | Purpose |
+| --- | --- |
+| `Topic7MCP.ipynb` | Topic 7 notebook |
+| `MCPtasks/` | MCP exercise programs and saved outputs |
+| `A2Atasks/` | A2A exercise files |
+| `README.md` | Topic 7 discussion answers |

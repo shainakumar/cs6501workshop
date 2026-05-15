@@ -1,0 +1,2 @@
+--- Evaluating Base Model on 200 Test Questions ---
+Base model accuracy: 41.00% (82/200)

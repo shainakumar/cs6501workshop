@@ -1,0 +1,77 @@
+Top LLM Agent Papers:
+1. InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents (2024)
+2. Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning (2025)
+3. A Survey of Large Language Model Agents for Question Answering (2025)
+4. Emergence of human-like polarization among large language model agents (2025)
+5. PersonaAgent: When Large Language Model Agents Meet Personalization at Test Time (2025)
+
+Number of citations since 2023: 10
+1. Enhancing large language models for knowledge graph question answering via multi-granularity knowledge injection and structured reasoning path-augmented prompting
+2. Multi-view dynamic perception framework for Chinese harmful meme detection
+3. SEGA: Selective cross-lingual representation via sparse guided attention for low-resource multilingual named entity recognition
+4. Validating generative agent-Based modeling in social media simulations through the lens of the friendship paradox
+5. SRSPSQL: A dual-stage Text-to-SQL framework with semantic rewriting and schema pruning
+
+References for ReAct:
+1953 - âCloze Procedureâ: A New Tool for Measuring Readability
+1992 - Class-Based n-gram Models of Natural Language
+2003 - Introduction to the CoNLL-2003 Shared Task: Language-Independent Named Entity Recognition
+2005 - A Framework for Learning Predictive Structures from Multiple Tasks and Unlabeled Data
+2005 - Automatically Constructing a Corpus of Sentential Paraphrases
+2005 - The PASCAL Recognising Textual Entailment Challenge
+2006 - Domain Adaptation with Structural Correspondence Learning
+2008 - A Scalable Hierarchical Distributed Language Model
+2008 - A unified architecture for natural language processing: deep neural networks with multitask learning
+2008 - Extracting and composing robust features with denoising autoencoders
+2008 - The Fourth PASCAL Recognizing Textual Entailment Challenge
+2009 - Natural Language Understanding
+2009 - ImageNet: A large-scale hierarchical image database
+2009 - The Sixth PASCAL Recognizing Textual Entailment Challenge
+2010 - Word Representations: A Simple and General Method for Semi-Supervised Learning
+2011 - The Winograd Schema Challenge
+2011 - The Seventh PASCAL Recognizing Textual Entailment Challenge
+2013 - One billion word benchmark for measuring progress in statistical language modeling
+2013 - Distributed Representations of Words and Phrases and their Compositionality
+2013 - Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank
+2014 - How transferable are features in deep neural networks?
+2014 - GloVe: Global Vectors for Word Representation
+2014 - Distributed Representations of Sentences and Documents
+2015 - Semi-supervised Sequence Learning
+2015 - A large annotated corpus for learning natural language inference
+2015 - Skip-Thought Vectors
+2015 - Aligning Books and Movies: Towards Story-Like Visual Explanations by Watching Movies and Reading Books
+2016 - Bidirectional Attention Flow for Machine Comprehension
+2016 - Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation
+2016 - context2vec: Learning Generic Context Embedding with Bidirectional LSTM
+2016 - Bridging Nonlinearities and Stochastic Regularizers with Gaussian Error Linear Units
+2016 - SQuAD: 100,000+ Questions for Machine Comprehension of Text
+2016 - A Decomposable Attention Model for Natural Language Inference
+2016 - Learning Distributed Representations of Sentences from Unlabelled Data
+2016 - 2016) rather than the standard relu, following OpenAI GPT. The training loss is the sum of the mean masked LM likelihood and the mean next sentence prediction likelihood
+2017 - Simple and Effective Multi-Paragraph Reading Comprehension
+2017 - Learned in Translation: Contextualized Word Vectors
+2017 - SemEval-2017 Task 1: Semantic Textual Similarity Multilingual and Crosslingual Focused Evaluation
+2017 - Attention is All you Need
+2017 - Reinforced Mnemonic Reader for Machine Reading Comprehension
+2017 - Supervised Learning of Universal Sentence Representations from Natural Language Inference Data
+2017 - TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension
+2017 - Discourse-Based Objectives for Fast Unsupervised Sentence Representation Learning
+2017 - A Broad-Coverage Challenge Corpus for Sentence Understanding through Inference
+2017 - Semi-supervised sequence tagging with bidirectional language models
+2017 - Quora Question Pairs
+2018 - Multi-Granularity Hierarchical Attention Fusion Networks for Reading Comprehension and Question Answering
+2018 - U-Net: Machine Reading Comprehension with Unanswerable Questions
+2018 - Semi-Supervised Sequence Modeling with Cross-View Training
+2018 - Dissecting Contextual Word Embeddings: Architecture and Representation
+2018 - SWAG: A Large-Scale Adversarial Dataset for Grounded Commonsense Inference
+2018 - Character-Level Language Modeling with Deeper Self-Attention
+2018 - Contextual String Embeddings for Sequence Labeling
+2018 - Neural Network Acceptability Judgments
+2018 - GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding
+2018 - Deep Contextualized Word Representations
+2018 - An efficient framework for learning sentence representations
+2018 - QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension
+2018 - MaskGAN: Better Text Generation via Filling in the ______
+2018 - Universal Language Model Fine-tuning for Text Classification
+2018 - Improving language understanding with unsupervised learning
+2018 - Corpus of linguistic acceptability
